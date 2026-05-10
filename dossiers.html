@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en-AU">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dossiers | Strange But True Travel Oracle</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Nunito+Sans:wght@700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles.css">
+  </head>
+  <body data-page="dossiers">
+    <header class="site-header">
+      <nav class="nav" aria-label="Main navigation">
+        <a class="brand" href="index.html"><span>Strange But True</span><span>Travel Oracle</span></a>
+        <div class="nav-links">
+          <a href="index.html">Home</a><a href="oracle.html">Oracle</a><a href="agents.html">Agents</a><a href="planning.html">Planning</a><a href="shared-table.html">Shared Table</a><a href="dossiers.html">Dossiers</a><a href="privacy.html">Privacy</a><a href="style-guide.html">Style</a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="page-head">
+        <h1>Destination dossiers start as markdown.</h1>
+        <p class="lede">One destination, one file, clear source notes, and no sensitive documents pasted into the repo.</p>
+      </section>
+
+      <section class="section">
+        <div class="grid three">
+          <article class="card">
+            <span class="tag">Template</span>
+            <h3>Destination dossier</h3>
+            <p>Country, city, safety, visa, budget, SBT purpose, Musicverse context, risks, and sources.</p>
+            <a class="button secondary" href="templates/destination-dossier.md">Open template</a>
+          </article>
+          <article class="card">
+            <span class="tag">Register</span>
+            <h3>Source register</h3>
+            <p>Official and operational sources to check before action.</p>
+            <a class="button secondary" href="data/sources/source-register.md">Open sources</a>
+          </article>
+          <article class="card">
+            <span class="tag">Cultural lens</span>
+            <h3>Shared Table context</h3>
+            <p>Food, hospitality, gathering, protocol, consent, and story-boundary questions for every place.</p>
+            <a class="button secondary" href="docs/shared-table-context.md">Open context</a>
+          </article>
+          <article class="card">
+            <span class="tag">Folder</span>
+            <h3>Dossier folder</h3>
+            <p>Destination notes live under `data/destinations/`.</p>
+            <a class="button secondary" href="data/destinations/README.md">Open index</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-head">
+          <h2>Dossier Statuses</h2>
+          <p>Status values keep a destination from sounding more ready than it is.</p>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Status</th><th>Meaning</th><th>Action</th></tr></thead>
+            <tbody>
+              <tr><td>draft</td><td>Early note.</td><td>Fill template.</td></tr>
+              <tr><td>needs-official-check</td><td>Unofficial or stale data.</td><td>Check primary sources.</td></tr>
+              <tr><td>watch</td><td>Worth observing.</td><td>Set next check date.</td></tr>
+              <tr><td>candidate</td><td>Possible destination.</td><td>Run oracle score.</td></tr>
+              <tr><td>active-plan</td><td>Being prepared.</td><td>Privacy and logistics review.</td></tr>
+              <tr><td>archive</td><td>No longer current.</td><td>Keep for reference only.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">Do not store passport numbers, booking references, or live addresses in dossiers.</footer>
+    <script src="assets/app.js"></script>
+  </body>
+</html>
