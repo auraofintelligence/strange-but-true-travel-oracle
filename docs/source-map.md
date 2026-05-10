@@ -63,6 +63,24 @@ Use: keep Luke's travel planning connected to the I C. Infinity/Musicverse signa
 
 Boundary: this is context, not a requirement that every travel decision becomes a music release. Keep private travel notes separate from public music pages unless Luke deliberately chooses to publish a sanitised reflection later.
 
+## global-group-marriages
+
+Role: speculative romance, kinship, consent, world-family, and Love U.N. context.
+
+Public context:
+
+- https://globalgroupmarriages.com
+
+Useful local files:
+
+- `global-group-marriages/index.html`
+- `GGM_Philosophising.md`
+- `GGM_Marriage_statistics.md`
+
+Use: keep a private relationship-and-romance lens inside the travel oracle. This can inform questions about consent, care, sovereignty, curiosity, cross-cultural relationship norms, group-family imagination, global marriage trends, and the difference between living human relationships and speculative world-building.
+
+Boundary: do not project the Global Group Marriages concept onto real people. Relationship possibility is not a travel KPI. Consent, law, local norms, privacy, and power differences come first.
+
 ## shared-table-initiative
 
 Role: recurring table, food, hospitality, safety, and cultural-context lens.

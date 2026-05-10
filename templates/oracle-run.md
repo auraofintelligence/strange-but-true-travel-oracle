@@ -22,6 +22,13 @@ What is being decided?
 - Confidence:
 - Status:
 
+## Joyful Responsible Abundance Compass
+
+- Joy:
+- Responsibility:
+- Abundance or lack:
+- Direction of hope:
+
 ## Agent Notes
 
 | Agent | Status | Key point |
@@ -30,6 +37,8 @@ What is being decided?
 | Safety and Consular |  |  |
 | Visa and Logistics |  |  |
 | Route and Budget |  |  |
+| Serendipity and Spontaneity |  |  |
+| Romance and Intercultural Relationships |  |  |
 | Opportunity and SBT |  |  |
 | Shared Table and Cultural Context |  |  |
 | Precognition and Planning |  |  |
@@ -42,6 +51,8 @@ What is being decided?
 | Safety and consular viability |  |  |
 | Visa and legal feasibility |  |  |
 | Budget and route feasibility |  |  |
+| Serendipity and spontaneity |  |  |
+| Romance and intercultural relationships |  |  |
 | Strange But True fit |  |  |
 | Shared Table and cultural context |  |  |
 | Timing and recovery |  |  |

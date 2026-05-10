@@ -15,6 +15,8 @@ A strong destination needs all of these:
 - safe enough
 - legal enough
 - financially survivable
+- open to serendipity without drifting into recklessness
+- respectful of romance, intercultural relationship norms, consent, and Global Group Marriages context
 - logistically possible
 - useful under the Strange But True banner
 - respectful of Shared Table, food, hospitality, and cultural context

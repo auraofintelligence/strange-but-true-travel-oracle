@@ -10,6 +10,8 @@ This repo is private by default.
 - Private logistics such as accommodation addresses and booking references.
 - Travel dates before they are safe to share.
 - Personal fears, dreams, intuition, and pattern notes.
+- Romance, attraction, dating, intimacy, relationship, and family notes unless deliberately redacted.
+- Private GGM / Global Group Marriages reflections that refer to real people.
 - Agent prompts that include sensitive personal context.
 - Any source file from the private field library unless it has been redacted.
 

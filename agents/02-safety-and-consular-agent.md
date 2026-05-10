@@ -12,7 +12,7 @@ Use official or primary sources first:
 - destination government entry pages
 - Australian embassy or high commission
 - local emergency or health agencies
-- travel insurer guidance
+- insurance guidance only where a legal, entry, visa, venue, transport, or client framework requires it
 
 ## Checks
 
@@ -21,7 +21,7 @@ Use official or primary sources first:
 - local laws that may affect Luke
 - communications and emergency access
 - nearest Australian mission or consular partner
-- insurance exclusions
+- compliance-only insurance requirement, if any
 
 ## Output
 

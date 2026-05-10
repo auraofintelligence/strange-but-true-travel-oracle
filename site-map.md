@@ -8,6 +8,8 @@ This repo must not collapse into a single `index.html`.
 - `oracle.html` - scoring model and current decision loop.
 - `agents.html` - agent team overview and handoffs.
 - `planning.html` - real-time and precognition/planning workflow.
+- `serendipity.html` - chance, spontaneity, invitations, and useful surprise.
+- `relationships.html` - romance, intercultural relationships, and Global Group Marriages context.
 - `shared-table.html` - recurring global table, food, hospitality and cultural-context lens.
 - `dossiers.html` - destination dossier index.
 - `privacy.html` - private boundary and publication rules.
@@ -22,6 +24,9 @@ This repo must not collapse into a single `index.html`.
 - `docs/system-overview.md` - architecture.
 - `docs/data-contract.md` - file shape and metadata.
 - `docs/source-map.md` - source repos and data origins.
+- `docs/joyful-responsible-abundance.md` - JRA as a compass, not a claim of arrival.
+- `docs/serendipity-context.md` - spontaneity and useful-surprise lens.
+- `docs/relationships-context.md` - romance, intercultural relationship and Global Group Marriages lens.
 - `docs/shared-table-context.md` - food, hospitality, culture and gathering lens.
 - `docs/style-guide.md` - writing and interface style.
 - `agents/README.md` - agent team charter.

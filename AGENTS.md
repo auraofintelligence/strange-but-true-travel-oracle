@@ -16,6 +16,7 @@ Use Australian English. Explain changes simply. Prefer small markdown updates th
 - Maintain decision trees.
 - Summarise live checks.
 - Prepare pre-departure, arrival, and fallback checklists.
+- Hold space for serendipity, spontaneity, romance, and intercultural relationship context without treating people as objectives.
 - Track Shared Table patterns across cultures: hospitality, food systems, consent, safety, reciprocity, and respectful public/private boundaries.
 - Flag contradictions, missing evidence, or stale data.
 
@@ -44,9 +45,10 @@ Use these folders:
 
 Use simple labels:
 
-- `official` - government, embassy, airline, insurer, legal, medical, or primary source.
+- `official` - government, embassy, airline, legal, medical, or primary source.
 - `operational` - booking, logistics, cost, route, accommodation, weather, event, or local contact information.
 - `strategic` - Strange But True, Aura, partnership, learning, writing, service, or world-building relevance.
+- `relational` - romance, attraction, intercultural relationship, consent, family, kinship, and Global Group Marriages context.
 - `pattern` - intuition, dreams, timing, repeated symbols, gut checks, or precognitive planning notes.
 - `cultural` - food, hospitality, table practice, protocol, reciprocity, local gathering, and consent context.
 - `unknown` - not checked yet.
@@ -58,6 +60,9 @@ No movement recommendation is complete unless it answers:
 1. Is it safe enough?
 2. Is it legal and visa-feasible?
 3. Is it financially survivable?
-4. Does it serve the Strange But True mission?
-5. Does it respect the local table, food, culture, and consent context?
-6. What would make the decision wrong?
+4. Is any insurance requirement legal, entry, venue, transport, or client compliance only?
+5. Does it leave room for serendipity without becoming reckless?
+6. Does it respect romance, consent, intercultural context, and local relationship norms?
+7. Does it serve the Strange But True mission?
+8. Does it respect the local table, food, culture, and consent context?
+9. What would make the decision wrong?

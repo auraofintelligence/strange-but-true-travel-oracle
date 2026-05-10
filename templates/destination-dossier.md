@@ -18,12 +18,19 @@ Short plain-English summary.
 
 Why this destination is being considered.
 
+## Joyful Responsible Abundance Compass
+
+- Where joy appears:
+- Where responsibility is needed:
+- Where abundance is missing or emerging:
+- What this place may teach about enoughness:
+
 ## Safety
 
 - Advisory level:
 - Main risks:
 - Nearest support:
-- Insurance issue:
+- Legal/entry/contract insurance requirement, if any:
 
 ## Visa and Entry
 
@@ -45,6 +52,24 @@ Why this destination is being considered.
 - Route options:
 - Best window:
 - Recovery needs:
+
+## Serendipity and Spontaneity
+
+- Useful surprise:
+- Invitation or coincidence:
+- Smallest safe spontaneous action:
+- Risk of over-planning:
+- Risk of saying yes too fast:
+
+## Romance and Intercultural Relationships
+
+- Relationship possibility:
+- Local dating/family/marriage norms:
+- Consent and boundaries:
+- Legal/cultural caution:
+- Language, money, visa, age, power, or public-visibility issues:
+- GGM / Love U.N. relevance:
+- Private-only notes:
 
 ## Strange But True Purpose
 

@@ -10,6 +10,9 @@ Use only when:
 - accommodation or arrival plan is clear
 - there is a fallback
 - Luke has recovery time
+- any insurance requirement is legal/entry/venue/transport/client compliance only
+- there is room for useful surprise without hiding hard risks
+- romance or intercultural relationship context is respectful and consent-aware
 - privacy risk is acceptable
 - food, hospitality, and cultural protocol risks are understood
 
@@ -37,6 +40,7 @@ Use when:
 Use when:
 
 - emotion is driving the decision
+- attraction or romance is overriding basic consent, law, safety, money, or cultural sense
 - budget is uncertain
 - health/recovery needs attention
 - source data is too stale
@@ -51,4 +55,5 @@ Use when:
 - route is unsafe or unaffordable
 - the trip would expose private risk
 - the cultural, table, or hospitality context would be mishandled
+- the romantic, intercultural, or GGM frame would be projected onto people who have not chosen it
 - the main justification collapses under simple questioning

@@ -26,6 +26,8 @@ privacy: private
 - Visa and Entry
 - Cost and Survival
 - Route and Timing
+- Serendipity and Spontaneity
+- Romance and Intercultural Relationships
 - Strange But True Purpose
 - Shared Table and Cultural Context
 - Contacts and Invitations
@@ -51,6 +53,7 @@ privacy: private
 - `unknown`
 - `pattern`
 - `strategic`
+- `relational`
 - `cultural`
 - `operational`
 - `official`

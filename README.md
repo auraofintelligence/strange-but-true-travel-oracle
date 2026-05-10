@@ -19,6 +19,9 @@ It uses markdown files as the source of truth so agent teams can read, update, a
 - No live location sharing in public files.
 - No passport numbers, card details, seed phrases, private keys, one-time codes, or account credentials.
 - Visa, safety, health, cost, and legal claims must be checked against official sources before action.
+- Insurance is included only where it is part of legal, visa, entry, venue, transport, or client-framework compliance. It is not treated as peace of mind or market logic.
+- Serendipity and spontaneity matter. The oracle should leave room for useful surprise while still naming real constraints.
+- Romance and intercultural relationships matter. Consent, law, local norms, privacy, and power differences must be explicit.
 - "Precognition" means pattern sensing, scenario planning, dream/intuitive notes, and early-warning thinking. It is not treated as certainty.
 - Every go/no-go decision needs a plain-language reason.
 
@@ -31,6 +34,7 @@ It uses markdown files as the source of truth so agent teams can read, update, a
 - [Decision trees](decision-trees/README.md)
 - [Data contract](docs/data-contract.md)
 - [Source map](docs/source-map.md)
+- [Joyful Responsible Abundance](docs/joyful-responsible-abundance.md)
 - [Style guide](docs/style-guide.md)
 
 ## Local Dashboard
@@ -51,6 +55,8 @@ This repo borrows ideas from:
 - `strange-but-true-field-library` - private archive and redaction-first project map.
 - `i-C-infinity-music-universe` - Musicverse context for the creative signal, travel mood, lyric/story threads, and Strange But True identity layer.
 - `shared-table-initiative` - recurring cultural table theme: food, hospitality, safety, consent, community contribution, and public/private story boundaries.
+- `global-group-marriages` - speculative relationship, consent, kinship, world-family, and Love U.N. context.
+- `GGM_Philosophising.md` and `GGM_Marriage_statistics.md` - private source notes for the relational-field layer.
 
 ## Repo Status
 
