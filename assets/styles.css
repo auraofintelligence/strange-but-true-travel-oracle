@@ -36,6 +36,7 @@ body {
   font-size: 18px;
   line-height: 1.55;
   margin: 0;
+  overflow-x: hidden;
 }
 
 a {
@@ -71,6 +72,7 @@ a {
   justify-content: space-between;
   margin: 0 auto;
   max-width: var(--max);
+  min-width: 0;
   padding: 0.85rem 1.25rem;
 }
 
@@ -97,6 +99,7 @@ a {
   flex-wrap: wrap;
   gap: 0.25rem;
   justify-content: flex-end;
+  min-width: 0;
 }
 
 .nav-links a {
@@ -120,6 +123,7 @@ a {
 main {
   margin: 0 auto;
   max-width: var(--max);
+  min-width: 0;
   padding: 2.5rem 1.25rem 4rem;
 }
 
@@ -144,12 +148,12 @@ h3 {
 }
 
 h1 {
-  font-size: clamp(2.3rem, 6vw, 5rem);
+  font-size: 4.6rem;
   max-width: 14ch;
 }
 
 h2 {
-  font-size: clamp(1.55rem, 3vw, 2.45rem);
+  font-size: 2.35rem;
 }
 
 h3 {
@@ -162,8 +166,231 @@ p {
 
 .lede {
   color: var(--muted);
-  font-size: clamp(1.05rem, 2vw, 1.3rem);
+  font-size: 1.22rem;
   max-width: 780px;
+}
+
+.home-main {
+  display: grid;
+  gap: 1.25rem;
+  min-width: 0;
+  padding-top: 1.5rem;
+}
+
+.home-hero {
+  align-items: stretch;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: minmax(0, 1.25fr) minmax(19rem, 0.75fr);
+  min-height: 28rem;
+}
+
+.home-copy,
+.start-panel,
+.home-section,
+.anchor-strip {
+  background:
+    linear-gradient(135deg, rgba(95, 216, 255, 0.11), transparent 42%),
+    rgba(24, 24, 42, 0.82);
+  border: 1px solid rgba(247, 243, 255, 0.12);
+  border-radius: 8px;
+  min-width: 0;
+}
+
+.home-copy {
+  align-content: center;
+  display: grid;
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.home-copy h1 {
+  font-size: 4.2rem;
+  max-width: 10ch;
+}
+
+.home-copy .lede {
+  max-width: 58ch;
+}
+
+.home-date {
+  color: var(--gold);
+  font-size: 0.95rem;
+  font-weight: 800;
+}
+
+.start-panel {
+  align-content: start;
+  display: grid;
+  gap: 0.75rem;
+  padding: 1rem;
+}
+
+.start-panel h2 {
+  font-size: 1.35rem;
+}
+
+.start-link,
+.index-card,
+.journey-steps a,
+.anchor-links a {
+  min-width: 0;
+  text-decoration: none;
+}
+
+.start-link {
+  background: rgba(255, 255, 255, 0.045);
+  border: 1px solid rgba(247, 243, 255, 0.12);
+  border-radius: 8px;
+  display: grid;
+  gap: 0.32rem;
+  grid-template-columns: 3rem minmax(0, 1fr);
+  padding: 0.9rem;
+}
+
+.start-link.primary {
+  background: rgba(255, 209, 102, 0.12);
+  border-color: rgba(255, 209, 102, 0.32);
+}
+
+.start-link span {
+  color: var(--cyan);
+  font-family: var(--heading);
+  font-weight: 900;
+  line-height: 1.1;
+}
+
+.start-link strong,
+.start-link small {
+  grid-column: 2;
+}
+
+.start-link strong {
+  color: var(--text);
+  font-family: var(--heading);
+  line-height: 1.15;
+}
+
+.start-link small {
+  color: var(--muted);
+  font-size: 0.86rem;
+  line-height: 1.35;
+}
+
+.home-section {
+  display: grid;
+  gap: 1rem;
+  padding: 1.25rem;
+}
+
+.section-head.compact {
+  align-items: start;
+  margin-bottom: 0;
+}
+
+.section-head.compact h2 {
+  font-size: 1.6rem;
+}
+
+.journey-steps {
+  display: grid;
+  gap: 0.7rem;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+}
+
+.journey-steps a {
+  background: rgba(16, 16, 32, 0.62);
+  border: 1px solid rgba(95, 216, 255, 0.18);
+  border-radius: 8px;
+  display: grid;
+  gap: 0.3rem;
+  min-height: 6.2rem;
+  padding: 0.8rem;
+}
+
+.journey-steps strong {
+  color: var(--text);
+  font-family: var(--heading);
+}
+
+.journey-steps span {
+  color: var(--muted);
+  font-size: 0.84rem;
+  line-height: 1.35;
+}
+
+.page-index {
+  display: grid;
+  gap: 0.7rem;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+.index-card {
+  background: rgba(16, 16, 32, 0.58);
+  border: 1px solid rgba(247, 243, 255, 0.12);
+  border-radius: 8px;
+  display: grid;
+  gap: 0.35rem;
+  min-height: 7rem;
+  padding: 0.85rem;
+}
+
+.index-card.highlight {
+  background: rgba(98, 246, 165, 0.09);
+  border-color: rgba(98, 246, 165, 0.26);
+}
+
+.index-card strong {
+  color: var(--text);
+  font-family: var(--heading);
+  line-height: 1.1;
+}
+
+.index-card span {
+  color: var(--muted);
+  font-size: 0.86rem;
+  line-height: 1.35;
+}
+
+.anchor-strip {
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  padding: 1rem 1.25rem;
+}
+
+.anchor-strip h2 {
+  font-size: 1.2rem;
+}
+
+.anchor-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  justify-content: flex-end;
+}
+
+.anchor-links a {
+  border: 1px solid rgba(247, 243, 255, 0.16);
+  border-radius: 8px;
+  color: var(--muted);
+  font-size: 0.86rem;
+  font-weight: 800;
+  padding: 0.48rem 0.65rem;
+}
+
+.start-link:hover,
+.start-link:focus,
+.index-card:hover,
+.index-card:focus,
+.journey-steps a:hover,
+.journey-steps a:focus,
+.anchor-links a:hover,
+.anchor-links a:focus {
+  border-color: rgba(95, 216, 255, 0.48);
+  color: var(--text);
+  outline: 2px solid rgba(95, 216, 255, 0.18);
 }
 
 .toolbar {
@@ -571,10 +798,14 @@ tr:last-child td {
   .nav {
     align-items: start;
     display: grid;
+    width: 100%;
   }
 
   .nav-links {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(6.2rem, 1fr));
     justify-content: start;
+    width: 100%;
   }
 
   .grid.three,
@@ -582,8 +813,49 @@ tr:last-child td {
   .metric-grid,
   .builder-layout,
   .field-grid,
-  .option-grid {
+  .option-grid,
+  .home-hero,
+  .journey-steps,
+  .page-index {
     grid-template-columns: 1fr;
+  }
+
+  .home-copy {
+    padding: 1.3rem;
+  }
+
+  .home-copy h1 {
+    font-size: 2.7rem;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 1.85rem;
+  }
+
+  .lede {
+    font-size: 1.08rem;
+  }
+
+  .home-hero {
+    min-height: 0;
+  }
+
+  .journey-steps a,
+  .index-card {
+    min-height: 0;
+  }
+
+  .anchor-strip {
+    align-items: start;
+    display: grid;
+  }
+
+  .anchor-links {
+    justify-content: start;
   }
 
   .row-card {
@@ -597,6 +869,35 @@ tr:last-child td {
 
   .output-panel {
     position: static;
+  }
+}
+
+@media (max-width: 520px) {
+  main {
+    padding-left: 0.9rem;
+    padding-right: 0.9rem;
+  }
+
+  .home-copy h1 {
+    font-size: 2.25rem;
+  }
+
+  h1 {
+    font-size: 2.35rem;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  .toolbar .button,
+  .toolbar button.button {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .start-link {
+    grid-template-columns: 2.4rem minmax(0, 1fr);
   }
 }
 
