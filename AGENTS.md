@@ -30,7 +30,13 @@ Use Australian English. Explain changes simply. Prefer small markdown updates th
 
 ## Markdown First
 
-The source of truth is markdown. If a future app generates data, it should be traceable back to these files.
+The source of truth is markdown, but the preferred human workflow is now browser builders that generate `.md` files for download, copying, and AI import.
+
+Agents should understand both layers:
+
+- builder pages create working `.md` files from forms
+- exported `.md` files become the auditable context for AI work
+- repo templates and docs explain structure, but should not be the only way a human creates files
 
 Use these folders:
 
@@ -40,6 +46,17 @@ Use these folders:
 - `data/sources/` for official and supporting sources.
 - `logs/oracle-runs/` for dated oracle runs.
 - `templates/` for repeatable file formats.
+
+Use these builder pages:
+
+- `travel-intake-builder.html` -> `travel-intake.md`
+- `destination-dossier-builder.html` -> `destination-dossier-{place}.md`
+- `oracle-run-builder.html` -> `oracle-run-{date}.md`
+- `signal-log-builder.html` -> `signal-log-{date}.md`
+- `serendipity-builder.html` -> `serendipity-map.md`
+- `relationship-field-builder.html` -> `relationship-field.md`
+- `shared-table-builder.html` -> `shared-table-field-note.md`
+- `agent-brief-builder.html` -> `agent-team-brief.md`
 
 ## Evidence Levels
 

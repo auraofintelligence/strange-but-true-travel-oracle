@@ -10,7 +10,7 @@ The Travel Oracle helps answer one practical question:
 
 > Where should Luke go next, why, and what must be true before it is sensible to move?
 
-It uses markdown files as the source of truth so agent teams can read, update, and explain their reasoning without hiding decisions inside a black-box app.
+It uses visible browser builders to create markdown files, then treats those `.md` files as the source of truth so agent teams can read, update, and explain their reasoning without hiding decisions inside a black-box app.
 
 ## Core Rules
 
@@ -28,6 +28,7 @@ It uses markdown files as the source of truth so agent teams can read, update, a
 ## Main Sections
 
 - [Site map](site-map.md)
+- [Markdown builders](builders.html)
 - [Private boundary](PRIVATE_BOUNDARY.md)
 - [System overview](docs/system-overview.md)
 - [Agent team charter](agents/README.md)
@@ -41,7 +42,20 @@ It uses markdown files as the source of truth so agent teams can read, update, a
 
 Open `index.html` in a browser for the private dashboard.
 
-The dashboard is a readable front door. The markdown files are the authority.
+Open `builders.html` when you want to generate `.md` files from forms.
+
+The dashboard is a readable front door. The builder pages create the working markdown files for AI import.
+
+## Builder Outputs
+
+- `travel-intake.md` - current human situation, JRA compass, privacy boundary, agent questions.
+- `destination-dossier-{place}.md` - destination checks, culture, relationships, Shared Table, Musicverse, Strange But True fit.
+- `oracle-run-{date}.md` - dated decision record and synthesis.
+- `signal-log-{date}.md` - dreams, intuition, repeated signs, practical checks, and overclaim boundaries.
+- `serendipity-map.md` - invitations, chance openings, smallest safe yes/no.
+- `relationship-field.md` - romance, intercultural relationships, consent, law, GGM / Love U.N. context.
+- `shared-table-field-note.md` - food, hospitality, protocol, reciprocity and public/private story boundaries.
+- `agent-team-brief.md` - paste-ready instructions for AI tools working with exported oracle files.
 
 ## Source Repos
 

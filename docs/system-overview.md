@@ -1,20 +1,44 @@
 # System Overview
 
-The Travel Oracle is a private markdown-first operating system.
+The Travel Oracle is a private markdown-builder-first operating system.
 
 Its core compass is Joyful Responsible Abundance, held as a direction of hope rather than a claim that Luke already has enough of it.
 
-It combines seven layers:
+It combines eight layers:
 
-1. Real-world checks.
-2. Serendipity and spontaneity context.
-3. Romance and intercultural relationship context.
-4. Strategic Strange But True context.
-5. Shared Table cultural context.
-6. Agent-team decision trees.
-7. Pattern, intuition, and precognition/planning notes.
+1. Browser builder pages that export `.md` files for AI import.
+2. Real-world checks.
+3. Serendipity and spontaneity context.
+4. Romance and intercultural relationship context.
+5. Strategic Strange But True context.
+6. Shared Table cultural context.
+7. Agent-team decision trees.
+8. Pattern, intuition, and precognition/planning notes.
 
-## Layer 1: Real-World Checks
+## Layer 1: Builder Pages
+
+The site should not hide the markdown layer behind repo folders.
+
+The main workflow is:
+
+1. Open a builder page.
+2. Fill in living context.
+3. Review the generated markdown preview.
+4. Copy or download the `.md` file.
+5. Import that file into an AI tool or save it into the repo after human review.
+
+Current builder outputs:
+
+- `travel-intake.md`
+- `destination-dossier-{place}.md`
+- `oracle-run-{date}.md`
+- `signal-log-{date}.md`
+- `serendipity-map.md`
+- `relationship-field.md`
+- `shared-table-field-note.md`
+- `agent-team-brief.md`
+
+## Layer 2: Real-World Checks
 
 These are practical and must be verified close to action:
 
@@ -28,7 +52,7 @@ These are practical and must be verified close to action:
 - budget and cashflow
 - weather and disruption risk
 
-## Layer 2: Serendipity and Spontaneity Context
+## Layer 3: Serendipity and Spontaneity Context
 
 The oracle should not crush all chance out of the journey.
 
@@ -40,7 +64,7 @@ Useful checks:
 - What would make this spontaneous move reckless?
 - Does the opportunity still pass legal, safety, money, consent, and privacy boundaries?
 
-## Layer 3: Romance and Intercultural Relationship Context
+## Layer 4: Romance and Intercultural Relationship Context
 
 Romance and relationship possibility are part of real travel, not an embarrassing side note.
 
@@ -52,7 +76,7 @@ Useful checks:
 - Are language, money, visa status, age, power, or public visibility creating vulnerability?
 - Does the Global Group Marriages / Love U.N. / world-family frame help reflection, or would it distort real people into theory?
 
-## Layer 4: Strange But True Context
+## Layer 5: Strange But True Context
 
 Travel should support the banner without forcing every trip to become a public performance.
 
@@ -64,7 +88,7 @@ Useful checks:
 - Is there a real reason to go beyond novelty?
 - Can the trip produce a private dossier, public-safe reflection, or future service pattern?
 
-## Layer 5: Shared Table Cultural Context
+## Layer 6: Shared Table Cultural Context
 
 The Shared Table theme travels with Luke as a recurring question, not a fixed event format.
 
@@ -76,7 +100,7 @@ Useful checks:
 - Who already feeds, hosts, grows, rescues, cooks, teaches, or welcomes?
 - What should remain private, and what could become a public-safe reflection later?
 
-## Layer 6: Agent Teams
+## Layer 7: Agent Teams
 
 Agents own different parts of the work:
 
@@ -94,7 +118,7 @@ Agents own different parts of the work:
 
 Each agent writes markdown notes. The Synthesis Agent turns those notes into a dated oracle run.
 
-## Layer 7: Pattern Notes
+## Layer 8: Pattern Notes
 
 Pattern notes are useful but not authoritative.
 

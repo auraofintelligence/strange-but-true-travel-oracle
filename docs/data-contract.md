@@ -1,6 +1,32 @@
 # Data Contract
 
-This repo uses markdown as the first data layer.
+This repo uses browser-generated markdown as the first data layer.
+
+The preferred flow is to create working `.md` files from the builder pages, then save or import them into AI tools after human review.
+
+## Builder Output Files
+
+- `travel-intake.md`
+- `destination-dossier-{place}.md`
+- `oracle-run-{date}.md`
+- `signal-log-{date}.md`
+- `serendipity-map.md`
+- `relationship-field.md`
+- `shared-table-field-note.md`
+- `agent-team-brief.md`
+
+Each builder output includes:
+
+- schema
+- status
+- privacy
+- builder page
+- output file name
+- generated date
+- AI import instructions
+- agent handoff
+- linked context
+- review notes
 
 ## Required Front Matter
 

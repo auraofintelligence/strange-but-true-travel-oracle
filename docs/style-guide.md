@@ -41,6 +41,15 @@ Avoid a generic tourist-site feel. This is more like a quiet mission dashboard:
 - warning colours only for warning states
 - no clutter
 
+## Builder Rules
+
+- Builder pages are first-class pages, not hidden repo extras.
+- Every builder should show fields, live generated markdown, copy, download, and clear controls.
+- Exported files should be agent-ready and readable in plain text.
+- Keep the output private by default.
+- Do not store sensitive live route, identity, romance, money, or contact details in public-safe files.
+- Use `.md` filenames that explain their role, such as `travel-intake.md`, `oracle-run-{date}.md`, or `relationship-field.md`.
+
 ## Colour Notes
 
 - Night ink: private dashboard base.

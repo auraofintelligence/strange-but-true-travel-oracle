@@ -6,6 +6,7 @@ This repo must not collapse into a single `index.html`.
 
 - `index.html` - private command centre.
 - `oracle.html` - scoring model and current decision loop.
+- `builders.html` - builder index for site-generated `.md` files.
 - `agents.html` - agent team overview and handoffs.
 - `planning.html` - real-time and precognition/planning workflow.
 - `serendipity.html` - chance, spontaneity, invitations, and useful surprise.
@@ -15,6 +16,17 @@ This repo must not collapse into a single `index.html`.
 - `privacy.html` - private boundary and publication rules.
 - `style-guide.html` - visual and writing style guide.
 - `docs/shared-table-context.md` - recurring Shared Table theme and cultural protocol lens.
+
+## Builder Pages
+
+- `travel-intake-builder.html` - exports `travel-intake.md`.
+- `destination-dossier-builder.html` - exports `destination-dossier-{place}.md`.
+- `oracle-run-builder.html` - exports `oracle-run-{date}.md`.
+- `signal-log-builder.html` - exports `signal-log-{date}.md`.
+- `serendipity-builder.html` - exports `serendipity-map.md`.
+- `relationship-field-builder.html` - exports `relationship-field.md`.
+- `shared-table-builder.html` - exports `shared-table-field-note.md`.
+- `agent-brief-builder.html` - exports `agent-team-brief.md`.
 
 ## Markdown System
 

@@ -416,6 +416,149 @@ tr:last-child td {
   padding: 1rem;
 }
 
+.builder-layout {
+  align-items: start;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: minmax(0, 1.05fr) minmax(20rem, 0.95fr);
+}
+
+.builder-form {
+  display: grid;
+  gap: 1rem;
+}
+
+.builder-form fieldset,
+.output-panel {
+  background: rgba(24, 24, 42, 0.88);
+  border: 1px solid rgba(247, 243, 255, 0.12);
+  border-radius: 8px;
+  margin: 0;
+  padding: 1rem;
+}
+
+.builder-form legend,
+.output-panel label {
+  color: var(--gold);
+  font-family: var(--heading);
+  font-size: 1.05rem;
+  font-weight: 900;
+  margin-bottom: 0.8rem;
+}
+
+.field-grid {
+  display: grid;
+  gap: 0.9rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.builder-field {
+  color: var(--text);
+  display: grid;
+  gap: 0.4rem;
+  font-size: 0.9rem;
+  font-weight: 800;
+}
+
+.builder-field.span-all {
+  grid-column: 1 / -1;
+}
+
+.builder-field input,
+.builder-field select,
+.builder-field textarea,
+.markdown-output {
+  background: rgba(247, 243, 255, 0.06);
+  border: 1px solid rgba(247, 243, 255, 0.18);
+  border-radius: 8px;
+  color: var(--text);
+  font: inherit;
+  font-size: 0.95rem;
+  min-height: 2.75rem;
+  padding: 0.75rem;
+  width: 100%;
+}
+
+.builder-field textarea {
+  min-height: 8rem;
+  resize: vertical;
+}
+
+.builder-field select {
+  color-scheme: dark;
+}
+
+.builder-field input:focus,
+.builder-field select:focus,
+.builder-field textarea:focus,
+.markdown-output:focus {
+  border-color: rgba(95, 216, 255, 0.72);
+  outline: 2px solid rgba(95, 216, 255, 0.28);
+}
+
+.option-grid {
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.check-option {
+  align-items: start;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(247, 243, 255, 0.12);
+  border-radius: 8px;
+  color: var(--muted);
+  display: flex;
+  gap: 0.45rem;
+  min-height: 2.5rem;
+  padding: 0.55rem 0.65rem;
+}
+
+.check-option input {
+  accent-color: var(--cyan);
+  margin-top: 0.22rem;
+  width: auto;
+}
+
+.builder-actions {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+}
+
+.button.danger {
+  background: rgba(255, 107, 107, 0.14);
+  border: 1px solid rgba(255, 107, 107, 0.36);
+  color: var(--text);
+}
+
+.status-message {
+  color: var(--green);
+  font-size: 0.92rem;
+  min-height: 1.4rem;
+}
+
+.output-panel {
+  display: grid;
+  gap: 0.75rem;
+  position: sticky;
+  top: 5.5rem;
+}
+
+.markdown-output {
+  color: var(--paper);
+  font-family: Consolas, "Courier New", monospace;
+  font-size: 0.84rem;
+  line-height: 1.45;
+  min-height: 42rem;
+  resize: vertical;
+}
+
+.builder-card {
+  align-content: start;
+}
+
 .footer {
   border-top: 1px solid rgba(247, 243, 255, 0.1);
   color: var(--quiet);
@@ -436,7 +579,10 @@ tr:last-child td {
 
   .grid.three,
   .grid.two,
-  .metric-grid {
+  .metric-grid,
+  .builder-layout,
+  .field-grid,
+  .option-grid {
     grid-template-columns: 1fr;
   }
 
@@ -447,6 +593,10 @@ tr:last-child td {
   .section-head {
     align-items: start;
     display: grid;
+  }
+
+  .output-panel {
+    position: static;
   }
 }
 
