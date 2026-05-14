@@ -231,6 +231,7 @@
       "- Strange But True: https://auraofintelligence.github.io/strange-but-true/",
       "- Australian World Travel: https://auraofintelligence.github.io/Australian-world-travel/",
       "- Australian World Travel strategy: https://auraofintelligence.github.io/Australian-world-travel/strategy.html",
+      "- Legal Memory Workbench local source: ../legal-memory-workbench/index.html",
       "- I C. Infinity Musicverse: https://auraofintelligence.github.io/i-C-infinity-music-universe/index.html",
       "- Shared Table Initiative: https://auraofintelligence.github.io/shared-table-initiative/",
       "- Global Group Marriages: https://globalgroupmarriages.com",

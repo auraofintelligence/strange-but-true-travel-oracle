@@ -81,8 +81,13 @@ a {
   font-family: var(--heading);
   font-weight: 900;
   line-height: 0.95;
+  min-width: 11.5rem;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+.brand span {
+  white-space: nowrap;
 }
 
 .brand span:first-child {
@@ -297,7 +302,7 @@ p {
 .journey-steps {
   display: grid;
   gap: 0.7rem;
-  grid-template-columns: repeat(6, minmax(0, 1fr));
+  grid-template-columns: repeat(7, minmax(0, 1fr));
 }
 
 .journey-steps a {

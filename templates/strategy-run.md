@@ -38,6 +38,7 @@ What route, place, timing, relationship, table, work or recovery strategy is bei
 | Intake |  |  |
 | Safety and Consular |  |  |
 | Visa and Logistics |  |  |
+| Legal Bridge / Legal Memory |  |  |
 | Route and Budget |  |  |
 | Serendipity and Spontaneity |  |  |
 | Romance and Intercultural Relationships |  |  |
@@ -61,6 +62,7 @@ What route, place, timing, relationship, table, work or recovery strategy is bei
 | --- | --- | --- |
 | Safety and consular viability |  |  |
 | Visa and legal feasibility |  |  |
+| Home/destination legal bridge |  |  |
 | Budget and route feasibility |  |  |
 | Timing and recovery |  |  |
 | Serendipity and spontaneity |  |  |

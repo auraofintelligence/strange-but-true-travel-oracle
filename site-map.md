@@ -8,6 +8,7 @@ This repo must not collapse into a single `index.html`.
 - `builders.html` - index of working pages. It is not the only builder surface.
 - `travel-intake-builder.html` - intake working page, exports `travel-intake.md`.
 - `dossiers.html` - destination dossier working page, exports `destination-dossier-{place}.md`.
+- `legal-bridge.html` - legal bridge working page, exports `legal-bridge-{place}.md`.
 - `planning.html` - strategy-run working page, exports `strategy-run-{date}.md`.
 - `serendipity.html` - serendipity working page, exports `serendipity-map.md`.
 - `relationships.html` - relationship-field working page, exports `relationship-field.md`.
@@ -16,6 +17,7 @@ This repo must not collapse into a single `index.html`.
 - `privacy.html` - privacy redaction working page, exports `privacy-redaction-review.md`.
 - `style-guide.html` - style-review working page, exports `style-review.md`.
 - `docs/shared-table-context.md` - recurring Shared Table theme and cultural protocol lens.
+- `docs/legal-bridge-context.md` - legal-memory bridge and rule-layer mapping notes.
 
 ## Direct Builder Aliases
 

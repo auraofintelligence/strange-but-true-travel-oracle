@@ -8,6 +8,7 @@ The preferred flow is to create working `.md` files from the site pages, then sa
 
 - `travel-intake.md`
 - `destination-dossier-{place}.md`
+- `legal-bridge-{place}.md`
 - `strategy-run-{date}.md`
 - `signal-log-{date}.md`
 - `serendipity-map.md`
@@ -54,6 +55,7 @@ privacy: private
 - Visa and Entry
 - Cost and Survival
 - Route and Timing
+- Legal Bridge
 - Serendipity and Spontaneity
 - Romance and Intercultural Relationships
 - Strange But True Purpose
@@ -100,6 +102,7 @@ Every strategy run should include:
 - date
 - strategy question
 - candidate places, routes or plans
+- legal bridge notes between home and destination rule layers
 - mixed preferences
 - constraints and gates
 - serendipity inputs

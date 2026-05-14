@@ -12,6 +12,7 @@ Use Australian English. Explain changes simply. Prefer small markdown updates th
 
 - Update destination dossiers.
 - Draft go/no-go reasoning.
+- Map legal-information questions between Luke's home legal layers and a destination's rule layers.
 - Add source notes with dates checked.
 - Maintain decision trees.
 - Summarise live checks.
@@ -51,6 +52,7 @@ Use these working pages:
 
 - `travel-intake-builder.html` -> `travel-intake.md`
 - `dossiers.html` -> `destination-dossier-{place}.md`
+- `legal-bridge.html` -> `legal-bridge-{place}.md`
 - `planning.html` -> `strategy-run-{date}.md`
 - `signal-log-builder.html` -> `signal-log-{date}.md`
 - `serendipity.html` -> `serendipity-map.md`
@@ -80,10 +82,11 @@ No movement recommendation is complete unless it answers:
 
 1. Is it safe enough?
 2. Is it legal and visa-feasible?
-3. Is it financially survivable?
-4. Is any insurance requirement legal, entry, venue, transport, or client compliance only?
-5. Does it leave room for serendipity without becoming reckless?
-6. Does it respect romance, consent, intercultural context, and local relationship norms?
-7. Does it serve the Strange But True mission?
-8. Does it respect the local table, food, culture, and consent context?
-9. What would make the decision wrong?
+3. Have the home and destination legal-rule layers been mapped for Luke's role in the trip?
+4. Is it financially survivable?
+5. Is any insurance requirement legal, entry, venue, transport, or client compliance only?
+6. Does it leave room for serendipity without becoming reckless?
+7. Does it respect romance, consent, intercultural context, and local relationship norms?
+8. Does it serve the Strange But True mission?
+9. Does it respect the local table, food, culture, and consent context?
+10. What would make the decision wrong?

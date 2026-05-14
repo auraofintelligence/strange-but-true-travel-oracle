@@ -6,6 +6,7 @@ Use only when:
 
 - official safety check is acceptable
 - entry path is confirmed
+- home and destination legal-rule layers have been mapped for the planned role
 - budget survives the move and the first week
 - accommodation or arrival plan is clear
 - there is a fallback
@@ -52,6 +53,7 @@ Use when:
 
 - official advice or conditions are unacceptable
 - visa/legal path is not feasible
+- legal bridge is unresolved for the planned role, public activity, relationship context, work, AI/data, crypto, medicine, filming, or restricted-region movement
 - route is unsafe or unaffordable
 - the trip would expose private risk
 - the cultural, table, or hospitality context would be mishandled

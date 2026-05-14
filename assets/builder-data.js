@@ -34,6 +34,7 @@
     ["intake", "Intake Agent"],
     ["safety", "Safety and Consular Agent"],
     ["visa", "Visa and Logistics Agent"],
+    ["legal_bridge", "Legal Memory and Travel Law Mapping Agent"],
     ["route_budget", "Route and Budget Agent"],
     ["serendipity", "Serendipity and Spontaneity Agent"],
     ["relationships", "Romance and Intercultural Relationships Agent"],
@@ -137,6 +138,61 @@
       ]
     },
 
+    legalBridge: {
+      page: "legal-bridge.html",
+      fileName: "legal-bridge-{slug}.md",
+      schema: "strange_but_true_travel_oracle.legal_bridge.v1",
+      storageKey: "sbtTravelOracleLegalBridge",
+      title: "Build legal-bridge.md",
+      lede: "Map the legal nuance between Luke's home rule layers and the country, island or territory being considered.",
+      markdownTitle: "Legal Bridge",
+      titleField: "target_place",
+      handoff: "Give this to the Legal Memory / Travel Law Mapping Agent before a strategy run becomes action. This is legal information preparation only, not legal advice.",
+      groups: [
+        {
+          legend: "Home and destination frame",
+          fields: [
+            { name: "map_title", label: "Map title", type: "text", placeholder: "e.g. Queensland to Japan legal bridge, Australia to French Polynesia field map" },
+            { name: "home_base", label: "Home legal base", type: "text", placeholder: "Australian citizen, Queensland base, local/home community layer" },
+            { name: "home_layers", label: "Local tri-jurisdictional layers", type: "textarea", placeholder: "Commonwealth / Australia, Queensland, local council or community context. Add any specific home-base legal memories." },
+            { name: "target_place", label: "Target country, island or territory", type: "text", placeholder: "Country, territory, island group, disputed region, overseas territory or route cluster" },
+            { name: "target_status", label: "Target status", type: "select", options: [["country", "Country"], ["island_or_territory", "Island or territory"], ["overseas_territory", "Overseas territory"], ["disputed_or_partial", "Disputed or partially recognised"], ["regional_route", "Regional route"], ["unknown", "Unknown"]] },
+            { name: "travel_role", label: "Likely travel role", type: "checkboxes", options: [["tourist", "Tourist"], ["business", "Business"], ["research", "Research"], ["artist_writer", "Artist / writer"], ["speaker", "Speaker"], ["volunteer", "Volunteer"], ["relationship", "Relationship / courtship"], ["shared_table", "Shared Table"], ["ai_blockchain", "AI / blockchain"], ["other", "Other"]] }
+          ]
+        },
+        {
+          legend: "Rule comparison",
+          fields: [
+            { name: "entry_stay", label: "Entry, stay and movement", type: "textarea", placeholder: "Visa, visa-free stay, border crossings, local registration, passport constraints, exit rules, restricted regions." },
+            { name: "work_business_money", label: "Work, business, money and tax clues", type: "textarea", placeholder: "Business meetings, paid work, remote work, local tax, banking, crypto, fundraising, gifts, grants, customs." },
+            { name: "relationships_family", label: "Relationships, marriage and family law clues", type: "textarea", placeholder: "Dating norms, consent age, marriage, non-standard relationships, public affection, family expectations, gender norms, GGM relevance." },
+            { name: "speech_media_content", label: "Speech, media, content and reputation", type: "textarea", placeholder: "Photography, filming, public commentary, defamation, political speech, religion, sacred sites, publishing boundaries." },
+            { name: "data_ai_crypto", label: "Data, AI, devices and blockchain", type: "textarea", placeholder: "Device searches, encryption, drones, biometrics, AI demos, data privacy, crypto/token restrictions, online conduct." },
+            { name: "health_substances", label: "Health, medicine, substances and body rules", type: "textarea", placeholder: "Medication, prescriptions, supplements, health declarations, local substance laws, medical privacy, body/biometric concerns." }
+          ]
+        },
+        {
+          legend: "Nuance and conflict points",
+          fields: [
+            { name: "home_rules_follow", label: "Home rules that may follow Luke", type: "textarea", placeholder: "Australian passport duties, tax residency, online conduct, business obligations, family/legal memory issues, evidence duties." },
+            { name: "destination_overrides", label: "Destination rules that may override assumptions", type: "textarea", placeholder: "Where local law, custom, contract, police power, visa condition or platform rule changes the plan." },
+            { name: "grey_zones", label: "Grey zones and unknowns", type: "textarea", placeholder: "Anything that feels legally unclear, culturally ambiguous, risky, contested or source-dependent." },
+            { name: "legal_memory_links", label: "Legal Memory Workbench links or files", type: "textarea", placeholder: "jurisdiction-map.md, legal-sources.md, risk-map.md, evidence-checklist.md, agent-instructions.md, or local workbench notes to import." },
+            { name: "official_sources", label: "Official sources to check", type: "textarea", placeholder: "Embassy, consulate, immigration, police, customs, tax, health, local government, court/tribunal, regulator, Smartraveller-style source." }
+          ]
+        },
+        {
+          legend: "Action handoff",
+          fields: [
+            { name: "legal_status", label: "Current legal-readiness band", type: "select", options: [["info_only", "Information only"], ["needs_source_check", "Needs official source check"], ["ask_embassy", "Ask embassy / consulate"], ["ask_local_lawyer", "Ask local lawyer or clinic"], ["do_not_act", "Do not act yet"], ["cleared_for_strategy", "Cleared for strategy run"]] },
+            { name: "insurance_compliance", label: "Insurance only if legally or contractually required", type: "textarea", placeholder: "Only record entry, visa, venue, transport, client, event or contract requirements. No peace-of-mind framing." },
+            { name: "what_not_to_do", label: "What not to do until checked", type: "textarea", placeholder: "Actions, claims, posts, relationship moves, business moves, payments, crossings or documents to pause." },
+            { name: "next_questions", label: "Next legal questions for agents", type: "textarea", placeholder: "Specific questions an AI agent, official source, embassy or lawyer should answer before travel action." }
+          ]
+        }
+      ]
+    },
+
     strategyRun: {
       page: "planning.html",
       fileName: "strategy-run-{date}.md",
@@ -161,6 +217,7 @@
           legend: "Dataset inputs",
           fields: [
             { name: "official_checks", label: "Official and operational checks", type: "textarea", placeholder: "Visa, safety, health, route, budget, legal-framework insurance requirements only." },
+            { name: "legal_bridge_output", label: "Legal bridge output", type: "textarea", placeholder: "Home/destination rule-layer notes, legal-readiness band, official sources still needed, actions paused until checked." },
             { name: "serendipity_output", label: "Serendipity and spontaneity output", type: "textarea", placeholder: "Useful surprise, invitations, cheap paths, chance openings, smallest safe yes." },
             { name: "relationship_output", label: "Romance and intercultural relationship output", type: "textarea", placeholder: "Relational possibilities, consent, law, local norms, privacy, power differences." },
             { name: "shared_table_output", label: "Shared Table output", type: "textarea", placeholder: "Hospitality, food, reciprocity, cultural protocols, public/private story boundaries." },

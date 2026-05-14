@@ -50,6 +50,7 @@ The dashboard is a readable front door. Each main page has a short brief plus a 
 
 - `travel-intake.md` - current human situation, JRA compass, privacy boundary, agent questions.
 - `destination-dossier-{place}.md` - destination checks, culture, relationships, Shared Table, Musicverse, Strange But True fit.
+- `legal-bridge-{place}.md` - comparison between Luke's home legal layers and the destination's rule layers.
 - `strategy-run-{date}.md` - dated model of mixed preferences, constraints, plans, strategy, and serendipity.
 - `signal-log-{date}.md` - dreams, intuition, repeated signs, practical checks, and overclaim boundaries.
 - `serendipity-map.md` - invitations, chance openings, smallest safe yes/no.
@@ -65,6 +66,7 @@ This repo borrows ideas from:
 
 - `Australian-world-travel` - existing visa guide, logistics tracker, document planner, and Catalyst Oracle prototype.
 - `Global_Peace_Through_AI_Travel.md`, `Aura_Travel_Oracle.md`, `Luke's_Travel_Oracle_for_2025_to_2035.md`, and `Designing_a_Dynamic_AI-Powered_Travel_Intelligence_System.md` - source planning documents for the dynamic travel intelligence system, Catalyst Oracle logic, Location Readiness Score, agent orchestration and 2025-2035 mission frame.
+- `legal-memory-workbench` - jurisdiction map, source trail, risk map, evidence checklist and agent-instruction pattern for legal-information preparation.
 - `the-great-unveiling` - public-facing Journey context.
 - `aura-affinity` - potential contact and place-mapping layer.
 - `space-weather-news` - possible environmental and resilience signal layer.

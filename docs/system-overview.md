@@ -4,16 +4,17 @@ This site is a private markdown-builder-first operating system for feeding a fut
 
 Its core compass is Joyful Responsible Abundance, held as a direction of hope rather than a claim that Luke already has enough of it.
 
-It combines eight layers:
+It combines nine layers:
 
 1. Browser working pages that export `.md` files for AI import.
 2. Real-world checks.
-3. Serendipity and spontaneity context.
-4. Romance and intercultural relationship context.
-5. Strategic Strange But True context.
-6. Shared Table cultural context.
-7. Agent-team decision trees.
-8. Pattern, intuition, and precognition/planning notes.
+3. Legal bridge mapping between home rule layers and destination rule layers.
+4. Serendipity and spontaneity context.
+5. Romance and intercultural relationship context.
+6. Strategic Strange But True context.
+7. Shared Table cultural context.
+8. Agent-team decision trees.
+9. Pattern, intuition, and precognition/planning notes.
 
 ## Layer 1: Working Pages
 
@@ -31,6 +32,7 @@ Current builder outputs:
 
 - `travel-intake.md`
 - `destination-dossier-{place}.md`
+- `legal-bridge-{place}.md`
 - `strategy-run-{date}.md`
 - `signal-log-{date}.md`
 - `serendipity-map.md`
@@ -47,6 +49,7 @@ These are practical and must be verified close to action:
 - visa and entry rules
 - passport validity
 - travel advisories
+- legal bridge between Luke's home rule layers and the destination's rule layers
 - insurance only where legally or contractually required
 - health requirements
 - route feasibility
@@ -54,7 +57,21 @@ These are practical and must be verified close to action:
 - budget and cashflow
 - weather and disruption risk
 
-## Layer 3: Serendipity and Spontaneity Context
+## Layer 3: Legal Bridge Context
+
+The travel oracle should make legal nuance visible before a destination becomes a real move.
+
+Useful checks:
+
+- Which Australian / Queensland / local or home-base rules may still matter while travelling?
+- Which destination laws, visa conditions, customs, contracts or local protocols override Luke's assumptions?
+- What changes when the target is an island, overseas territory, disputed region, partially recognised state or restricted area?
+- Which relationship, work, speech, data, device, AI, crypto, filming, medicine or public-space rules need official checking?
+- Which official source, embassy, consulate, legal clinic or local lawyer should be asked before action?
+
+Use `legal-bridge.html` and `docs/legal-bridge-context.md`.
+
+## Layer 4: Serendipity and Spontaneity Context
 
 The future oracle should not crush all chance out of the journey.
 
@@ -66,7 +83,7 @@ Useful checks:
 - What would make this spontaneous move reckless?
 - Does the opportunity still pass legal, safety, money, consent, and privacy boundaries?
 
-## Layer 4: Romance and Intercultural Relationship Context
+## Layer 5: Romance and Intercultural Relationship Context
 
 Romance and relationship possibility are part of real travel, not an embarrassing side note.
 
@@ -78,7 +95,7 @@ Useful checks:
 - Are language, money, visa status, age, power, or public visibility creating vulnerability?
 - Does the Global Group Marriages / Love U.N. / world-family frame help reflection, or would it distort real people into theory?
 
-## Layer 5: Strange But True Context
+## Layer 6: Strange But True Context
 
 Travel should support the banner without forcing every trip to become a public performance.
 
@@ -90,7 +107,7 @@ Useful checks:
 - Is there a real reason to go beyond novelty?
 - Can the trip produce a private dossier, public-safe reflection, or future service pattern?
 
-## Layer 6: Shared Table Cultural Context
+## Layer 7: Shared Table Cultural Context
 
 The Shared Table theme travels with Luke as a recurring question, not a fixed event format.
 
@@ -102,13 +119,14 @@ Useful checks:
 - Who already feeds, hosts, grows, rescues, cooks, teaches, or welcomes?
 - What should remain private, and what could become a public-safe reflection later?
 
-## Layer 7: Agent Teams
+## Layer 8: Agent Teams
 
 Agents own different parts of the work:
 
 - Intake Agent
 - Safety and Consular Agent
 - Visa and Logistics Agent
+- Legal Memory and Travel Law Mapping Agent
 - Route and Budget Agent
 - Serendipity and Spontaneity Agent
 - Romance and Intercultural Relationships Agent
@@ -120,7 +138,7 @@ Agents own different parts of the work:
 
 Each agent writes markdown notes. The Synthesis Agent turns those notes into a dated strategy run.
 
-## Layer 8: Pattern Notes
+## Layer 9: Pattern Notes
 
 Pattern notes are useful but not authoritative.
 

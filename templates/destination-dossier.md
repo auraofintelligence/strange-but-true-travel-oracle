@@ -40,6 +40,14 @@ Why this destination is being considered.
 - Cost:
 - Official source:
 
+## Legal Bridge
+
+- Home legal layers that may still matter:
+- Destination rule layers to check:
+- Work, speech, data, relationship, health or device cautions:
+- Legal Memory Workbench file to import:
+- Official legal-information sources to check:
+
 ## Cost and Survival
 
 - Arrival cost:

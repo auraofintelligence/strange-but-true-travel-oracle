@@ -17,6 +17,20 @@ Useful files:
 
 Use: extract ideas and data shapes, not blind-copy the old interface.
 
+## legal-memory-workbench
+
+Role: legal-information preparation pattern for the travel legal bridge.
+
+Useful files:
+
+- `pages/jurisdiction-map.html` - national, state/territory and local rule-layer worksheet.
+- `pages/legal-sources.html` - source trail worksheet.
+- `pages/risk-map.html` - rule-friction and evidence-checklist worksheet.
+- `pages/agent-instructions.html` - guardrails for AI legal-information assistance.
+- `templates/*.template.md` - markdown output shapes for source, jurisdiction, risk and agent notes.
+
+Use: borrow the legal-memory workflow and generate travel-specific legal bridge `.md` files. Do not provide legal advice.
+
 ## Travel Oracle source documents
 
 Role: private source material for the SBT markdown-builder component.
