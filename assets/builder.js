@@ -132,10 +132,23 @@
     sessionStorage.setItem(config.storageKey, JSON.stringify(state));
   }
 
-  function renderField(config, field) {
+  function shouldSpanField(config, field, fieldIndex) {
+    const fieldType = field.type || "text";
+    const fieldText = [field.name, field.label, field.placeholder, field.help].join(" ");
+    const importantTextPattern = /\b(title|destination|route|place|country|region|base|source|subject|question|target|file|page|component|scope|context)\b/i;
+    const longText = String(field.label || "").length > 42 || String(field.placeholder || "").length > 42 || String(field.help || "").length > 90;
+    if (field.span === "all" || field.fullWidth) return true;
+    if (fieldType === "textarea" || fieldType === "checkboxes") return true;
+    if (field.name === config.titleField) return true;
+    if (fieldType === "select") return longText;
+    if (fieldType !== "text") return false;
+    return fieldIndex === 0 || importantTextPattern.test(fieldText) || longText;
+  }
+
+  function renderField(config, field, fieldIndex) {
     const label = document.createElement("label");
     const fieldType = field.type || "text";
-    label.className = "builder-field is-" + fieldType + (fieldType === "checkboxes" ? " span-all" : "");
+    label.className = "builder-field is-" + fieldType + (shouldSpanField(config, field, fieldIndex) ? " span-all" : "");
     if (field.type !== "checkboxes") label.setAttribute("for", fieldId(config, field));
 
     const labelText = document.createElement("span");
@@ -364,7 +377,7 @@
       fieldset.appendChild(legend);
       const fieldGrid = document.createElement("div");
       fieldGrid.className = "field-grid";
-      group.fields.forEach((field) => fieldGrid.appendChild(renderField(config, field)));
+      group.fields.forEach((field, fieldIndex) => fieldGrid.appendChild(renderField(config, field, fieldIndex)));
       fieldset.appendChild(fieldGrid);
       form.appendChild(fieldset);
     });
