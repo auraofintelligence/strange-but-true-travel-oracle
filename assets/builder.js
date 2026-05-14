@@ -109,6 +109,11 @@
         }
         const input = form.elements[field.name];
         if (input && Object.prototype.hasOwnProperty.call(state, field.name)) {
+          if (field.type === "select") {
+            const savedValue = state[field.name];
+            const validOption = [...input.options].some((option) => option.value === savedValue);
+            if (!validOption) return;
+          }
           input.value = state[field.name];
         }
       });
