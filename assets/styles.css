@@ -769,6 +769,16 @@ tr:last-child td {
   color-scheme: dark;
 }
 
+.builder-field select option {
+  background-color: #202033;
+  color: #f7f3ff;
+}
+
+.builder-field select option:checked {
+  background-color: #5fd8ff;
+  color: #081019;
+}
+
 .builder-field input:focus,
 .builder-field select:focus,
 .builder-field textarea:focus,
