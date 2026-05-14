@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Strange But True travel oracle favicon">
+  <defs>
+    <linearGradient id="sky" x1="10" x2="54" y1="8" y2="56" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#11162a"/>
+      <stop offset="1" stop-color="#202033"/>
+    </linearGradient>
+    <linearGradient id="path" x1="12" x2="52" y1="42" y2="18" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#5fd8ff"/>
+      <stop offset="1" stop-color="#62f6a5"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="url(#sky)"/>
+  <circle cx="32" cy="32" r="20" fill="none" stroke="#5fd8ff" stroke-width="3"/>
+  <path d="M13 37c11 6 25 6 38 0" fill="none" stroke="#5fd8ff" stroke-width="2.4" stroke-linecap="round" opacity=".7"/>
+  <path d="M13 27c11-6 25-6 38 0" fill="none" stroke="#5fd8ff" stroke-width="2.4" stroke-linecap="round" opacity=".45"/>
+  <path d="M32 12c-5 6-7 13-7 20s2 14 7 20" fill="none" stroke="#5fd8ff" stroke-width="2.2" stroke-linecap="round" opacity=".65"/>
+  <path d="M32 12c5 6 7 13 7 20s-2 14-7 20" fill="none" stroke="#5fd8ff" stroke-width="2.2" stroke-linecap="round" opacity=".65"/>
+  <path d="M13 46c13-13 24-22 39-29" fill="none" stroke="url(#path)" stroke-width="3.8" stroke-linecap="round"/>
+  <path d="M49 14l4 12-9-4-8 9-3-3 8-9-4-9z" fill="#ffd166" stroke="#101020" stroke-linejoin="round" stroke-width="1.5"/>
+  <circle cx="15" cy="46" r="4" fill="#ffd166" stroke="#101020" stroke-width="1.5"/>
+</svg>
