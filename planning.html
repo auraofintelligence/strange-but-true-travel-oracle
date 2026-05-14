@@ -3,62 +3,45 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Planning | Strange But True Travel Oracle</title>
+    <title>Strategy Run | Strange But True Travel Oracle</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Nunito+Sans:wght@700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/styles.css">
   </head>
-  <body data-page="planning">
+  <body data-page="planning" data-builder="strategyRun">
     <header class="site-header">
       <nav class="nav" aria-label="Main navigation">
         <a class="brand" href="index.html"><span>Strange But True</span><span>Travel Oracle</span></a>
         <div class="nav-links">
-          <a href="index.html">Home</a><a href="builders.html">Builders</a><a href="agents.html">Agents</a><a href="planning.html">Planning</a><a href="serendipity.html">Serendipity</a><a href="relationships.html">Relationships</a><a href="shared-table.html">Shared Table</a><a href="dossiers.html">Dossiers</a><a href="privacy.html">Privacy</a><a href="style-guide.html">Style</a>
+          <a href="index.html">Home</a>
+          <a href="builders.html">Builders</a>
+          <a href="travel-intake-builder.html">Intake</a>
+          <a href="dossiers.html">Dossiers</a>
+          <a href="planning.html">Strategy</a>
+          <a href="serendipity.html">Serendipity</a>
+          <a href="relationships.html">Relationships</a>
+          <a href="shared-table.html">Shared Table</a>
+          <a href="agents.html">Agents</a>
+          <a href="privacy.html">Privacy</a>
+          <a href="style-guide.html">Style</a>
         </div>
       </nav>
     </header>
-    <main>
-      <section class="page-head">
-        <h1>Real-time checks and future-sensing stay separate.</h1>
-        <p class="lede">The planning layer can hold intuition and precognition-style notes, but every signal needs a practical check or a reflection-only label.</p>
+    <main id="main">
+      <section class="page-head wide">
+        <h1>Build the strategy run.</h1>
+        <p class="lede">This is the SBT markdown layer for the Catalyst Oracle idea: mixed preferences, survival reality, opportunity vectors, serendipity and the next useful check.</p>
         <div class="toolbar">
-          <a class="button gold" href="signal-log-builder.html">Build signal-log.md</a>
-          <a class="button secondary" href="strategy-run-builder.html">Build strategy-run.md</a>
+          <a class="button secondary" href="https://auraofintelligence.github.io/Australian-world-travel/strategy.html" target="_blank" rel="noopener noreferrer">Open Australian World Travel strategy</a>
+          <a class="button secondary" href="signal-log-builder.html">Log a signal instead</a>
         </div>
       </section>
-
-      <section class="section">
-        <div class="section-head">
-          <h2>Planning Lanes</h2>
-          <p>Each lane has a different evidence level.</p>
-        </div>
-        <div class="grid three">
-          <article class="card"><span class="status green">Official</span><h3>Action evidence</h3><p>Government, embassy, airline, health, legal, or primary sources. Insurance only appears here when a framework requires it.</p></article>
-          <article class="card"><span class="status gold">Operational</span><h3>Practical evidence</h3><p>Routes, accommodation, costs, contacts, local timing, weather, and event logistics.</p></article>
-          <article class="card"><span class="status private">Pattern</span><h3>Private signal</h3><p>Dreams, intuition, repeated symbols, body signals, and scenario rehearsals.</p></article>
-        </div>
-      </section>
-
-      <section class="section">
-        <div class="section-head">
-          <h2>Pattern Note Test</h2>
-          <p>Useful signal should become grounded action.</p>
-        </div>
-        <div class="table-wrap">
-          <table>
-            <thead><tr><th>Question</th><th>Good answer</th><th>Weak answer</th></tr></thead>
-            <tbody>
-              <tr><td>What repeated?</td><td>A clear symbol, place, person, route, warning, or timing pattern.</td><td>A vague mood with no detail.</td></tr>
-              <tr><td>What should be checked?</td><td>Official advice, route, cost, contact, weather, health, or timing.</td><td>Nothing, just a feeling.</td></tr>
-              <tr><td>What is the risk?</td><td>Both ignoring it and over-believing it are named.</td><td>The note becomes a command.</td></tr>
-              <tr><td>Where does it go?</td><td><a href="signal-log-builder.html">signal-log-builder.html</a></td><td>Mixed into official evidence.</td></tr>
-            </tbody>
-          </table>
-        </div>
-      </section>
+      <div data-builder-root></div>
     </main>
-    <footer class="footer">Precognition here means scenario planning and pattern sensing, not certainty.</footer>
+    <footer class="footer">The strategy run is a working dataset, not a prophecy.</footer>
     <script src="assets/app.js"></script>
+    <script src="assets/builder-data.js"></script>
+    <script src="assets/builder.js"></script>
   </body>
 </html>

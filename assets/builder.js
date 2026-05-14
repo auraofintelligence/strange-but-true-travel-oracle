@@ -66,6 +66,14 @@
       .replace("{slug}", slugify(title));
   }
 
+  function currentFileName() {
+    return window.location.pathname.split("/").pop() || "index.html";
+  }
+
+  function getBuilderPage(config) {
+    return currentFileName() || config.page;
+  }
+
   function getState(config, form) {
     const state = {};
     config.groups.forEach((group) => {
@@ -113,7 +121,8 @@
 
   function renderField(config, field) {
     const label = document.createElement("label");
-    label.className = field.type === "checkboxes" ? "builder-field span-all" : "builder-field";
+    const fieldType = field.type || "text";
+    label.className = "builder-field is-" + fieldType + (fieldType === "checkboxes" ? " span-all" : "");
     if (field.type !== "checkboxes") label.setAttribute("for", fieldId(config, field));
 
     const labelText = document.createElement("span");
@@ -179,7 +188,7 @@
       "schema: " + yamlScalar(config.schema),
       "status: draft_for_ai_import",
       "privacy: private",
-      "builder: " + yamlScalar(config.page),
+      "builder: " + yamlScalar(getBuilderPage(config)),
       "output_file: " + yamlScalar(fileName),
       "generated_date: " + yamlScalar(displayDate()),
       "title: " + yamlScalar(state[config.titleField] || config.markdownTitle),
@@ -220,9 +229,12 @@
       "## Linked Context",
       "",
       "- Strange But True: https://auraofintelligence.github.io/strange-but-true/",
+      "- Australian World Travel: https://auraofintelligence.github.io/Australian-world-travel/",
+      "- Australian World Travel strategy: https://auraofintelligence.github.io/Australian-world-travel/strategy.html",
       "- I C. Infinity Musicverse: https://auraofintelligence.github.io/i-C-infinity-music-universe/index.html",
       "- Shared Table Initiative: https://auraofintelligence.github.io/shared-table-initiative/",
       "- Global Group Marriages: https://globalgroupmarriages.com",
+      "- Source docs: Designing_a_Dynamic_AI-Powered_Travel_Intelligence_System.md; Global_Peace_Through_AI_Travel.md; Aura_Travel_Oracle.md; Luke's_Travel_Oracle_for_2025_to_2035.md",
       "",
       "## Review Notes",
       "",
@@ -276,7 +288,7 @@
       const link = document.createElement("a");
       link.className = "button secondary";
       link.href = config.page;
-      link.textContent = "Open builder";
+      link.textContent = "Open working page";
 
       card.append(tag, title, copy, link);
       fragment.appendChild(card);
@@ -284,8 +296,39 @@
     indexMount.appendChild(fragment);
   }
 
+  function renderBuilderTrail(config) {
+    const trail = document.createElement("nav");
+    trail.className = "builder-trail";
+    trail.setAttribute("aria-label", "Builder navigation");
+
+    const summary = document.createElement("p");
+    summary.textContent = config.fileName + " export";
+
+    const links = document.createElement("div");
+    links.className = "builder-trail-links";
+
+    const buildersLink = document.createElement("a");
+    buildersLink.className = "button secondary";
+    buildersLink.href = "builders.html";
+    buildersLink.textContent = "Back to builders";
+    links.appendChild(buildersLink);
+
+    if (config.page && config.page !== currentFileName()) {
+      const pageLink = document.createElement("a");
+      pageLink.className = "button secondary";
+      pageLink.href = config.page;
+      pageLink.textContent = "Open main page";
+      links.appendChild(pageLink);
+    }
+
+    trail.append(summary, links);
+    return trail;
+  }
+
   function renderBuilderPage(config) {
     if (!root) return;
+
+    root.appendChild(renderBuilderTrail(config));
 
     const section = document.createElement("section");
     section.className = "section builder-layout";

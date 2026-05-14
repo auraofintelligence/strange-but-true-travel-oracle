@@ -3,43 +3,45 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Privacy | Strange But True Travel Oracle</title>
+    <title>Privacy Review | Strange But True Travel Oracle</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Nunito+Sans:wght@700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/styles.css">
   </head>
-  <body data-page="privacy">
+  <body data-page="privacy" data-builder="privacyRedaction">
     <header class="site-header">
       <nav class="nav" aria-label="Main navigation">
         <a class="brand" href="index.html"><span>Strange But True</span><span>Travel Oracle</span></a>
         <div class="nav-links">
-          <a href="index.html">Home</a><a href="builders.html">Builders</a><a href="agents.html">Agents</a><a href="planning.html">Planning</a><a href="serendipity.html">Serendipity</a><a href="relationships.html">Relationships</a><a href="shared-table.html">Shared Table</a><a href="dossiers.html">Dossiers</a><a href="privacy.html">Privacy</a><a href="style-guide.html">Style</a>
+          <a href="index.html">Home</a>
+          <a href="builders.html">Builders</a>
+          <a href="travel-intake-builder.html">Intake</a>
+          <a href="dossiers.html">Dossiers</a>
+          <a href="planning.html">Strategy</a>
+          <a href="serendipity.html">Serendipity</a>
+          <a href="relationships.html">Relationships</a>
+          <a href="shared-table.html">Shared Table</a>
+          <a href="agents.html">Agents</a>
+          <a href="privacy.html">Privacy</a>
+          <a href="style-guide.html">Style</a>
         </div>
       </nav>
     </header>
-    <main>
-      <section class="page-head">
-        <h1>Private first is the default.</h1>
-        <p class="lede">This oracle can create public-safe reflections later, but live travel, personal signal, and operational details stay internal unless deliberately redacted.</p>
-      </section>
-
-      <section class="section">
-        <div class="grid three">
-          <article class="card"><span class="status red">Never publish</span><h3>Identity and access</h3><p>Passport numbers, private keys, passwords, recovery phrases, card details, one-time codes, or account recovery material.</p></article>
-          <article class="card"><span class="status red">Never publish</span><h3>Live movement</h3><p>Exact live location, private route dates, accommodation addresses, bookings, and active safety vulnerabilities.</p></article>
-          <article class="card"><span class="status red">Never publish</span><h3>Private relationships</h3><p>Romance, attraction, intimacy, real-person GGM reflections, and relationship notes stay private unless deliberately redacted.</p></article>
-          <article class="card"><span class="status orange">Review first</span><h3>Creative and table reflection</h3><p>Travel stories, Musicverse notes, Shared Table observations, and Strange But True field notes need a redaction pass before sharing.</p></article>
+    <main id="main">
+      <section class="page-head wide">
+        <h1>Build a privacy review.</h1>
+        <p class="lede">Before anything leaves the private repo, make a redaction note for identity, live movement, relationships, money, vulnerability and public-safe abstraction.</p>
+        <div class="toolbar">
+          <a class="button secondary" href="PRIVATE_BOUNDARY.md">Open private boundary</a>
+          <a class="button secondary" href="agents/11-privacy-redaction-agent.md">Open privacy agent</a>
         </div>
       </section>
-
-      <section class="section">
-        <div class="callout">
-          <strong>Working file:</strong> <a href="PRIVATE_BOUNDARY.md">PRIVATE_BOUNDARY.md</a>
-        </div>
-      </section>
+      <div data-builder-root></div>
     </main>
     <footer class="footer">If unsure, keep it private.</footer>
     <script src="assets/app.js"></script>
+    <script src="assets/builder-data.js"></script>
+    <script src="assets/builder.js"></script>
   </body>
 </html>

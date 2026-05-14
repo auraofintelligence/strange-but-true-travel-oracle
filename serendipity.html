@@ -9,53 +9,39 @@
     <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Nunito+Sans:wght@700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/styles.css">
   </head>
-  <body data-page="serendipity">
+  <body data-page="serendipity" data-builder="serendipity">
     <header class="site-header">
       <nav class="nav" aria-label="Main navigation">
         <a class="brand" href="index.html"><span>Strange But True</span><span>Travel Oracle</span></a>
         <div class="nav-links">
-          <a href="index.html">Home</a><a href="builders.html">Builders</a><a href="agents.html">Agents</a><a href="planning.html">Planning</a><a href="serendipity.html">Serendipity</a><a href="relationships.html">Relationships</a><a href="shared-table.html">Shared Table</a><a href="dossiers.html">Dossiers</a><a href="privacy.html">Privacy</a><a href="style-guide.html">Style</a>
+          <a href="index.html">Home</a>
+          <a href="builders.html">Builders</a>
+          <a href="travel-intake-builder.html">Intake</a>
+          <a href="dossiers.html">Dossiers</a>
+          <a href="planning.html">Strategy</a>
+          <a href="serendipity.html">Serendipity</a>
+          <a href="relationships.html">Relationships</a>
+          <a href="shared-table.html">Shared Table</a>
+          <a href="agents.html">Agents</a>
+          <a href="privacy.html">Privacy</a>
+          <a href="style-guide.html">Style</a>
         </div>
       </nav>
     </header>
-    <main>
-      <section class="page-head">
-        <h1>Leave room for useful surprise.</h1>
-        <p class="lede">This is the lane for chance, invitations, strange timing, sudden routes, local openings, and the smallest safe yes.</p>
+    <main id="main">
+      <section class="page-head wide">
+        <h1>Map useful surprise.</h1>
+        <p class="lede">Use this page when a chance opening, invitation, route, song, dream or timing pattern deserves a small safe test instead of being flattened into logistics.</p>
         <div class="toolbar">
-          <a class="button gold" href="serendipity-builder.html">Build serendipity-map.md</a>
-          <a class="button" href="docs/serendipity-context.md">Open context note</a>
-          <a class="button secondary" href="agents/05-serendipity-spontaneity-agent.md">Open agent</a>
+          <a class="button secondary" href="docs/serendipity-context.md">Open source context</a>
+          <a class="button secondary" href="planning.html">Send into strategy</a>
         </div>
       </section>
-
-      <section class="section">
-        <div class="grid three">
-          <article class="card"><span class="status gold">Notice</span><h3>What is appearing?</h3><p>A person, route, event, song, meal, dream, symbol, or opportunity that was not in the plan.</p></article>
-          <article class="card"><span class="status green">Test</span><h3>Smallest safe yes</h3><p>Find the lightest action that lets the opening breathe without ignoring law, consent, money, or privacy.</p></article>
-          <article class="card"><span class="status orange">Check</span><h3>Recklessness line</h3><p>Name what would make the spontaneous move foolish, avoidant, expensive, unsafe, or culturally clumsy.</p></article>
-        </div>
-      </section>
-
-      <section class="section">
-        <div class="section-head">
-          <h2>Serendipity Questions</h2>
-          <p>Chance is allowed, but it gets named clearly.</p>
-        </div>
-        <div class="table-wrap">
-          <table>
-            <thead><tr><th>Question</th><th>Use</th><th>Boundary</th></tr></thead>
-            <tbody>
-              <tr><td>What opened?</td><td>Captures the actual invitation or coincidence.</td><td>No invented destiny.</td></tr>
-              <tr><td>What is the smallest yes?</td><td>Turns spontaneity into a testable action.</td><td>No reckless leap.</td></tr>
-              <tr><td>What would over-planning kill?</td><td>Protects aliveness and romance.</td><td>No contempt for planning.</td></tr>
-              <tr><td>What must be checked?</td><td>Grounds the moment in reality.</td><td>Law, consent, money, safety, privacy.</td></tr>
-            </tbody>
-          </table>
-        </div>
-      </section>
+      <div data-builder-root></div>
     </main>
-    <footer class="footer">Spontaneity is a value. Recklessness is not.</footer>
+    <footer class="footer">Spontaneity is allowed. Recklessness still gets named.</footer>
     <script src="assets/app.js"></script>
+    <script src="assets/builder-data.js"></script>
+    <script src="assets/builder.js"></script>
   </body>
 </html>

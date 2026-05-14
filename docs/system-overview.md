@@ -6,7 +6,7 @@ Its core compass is Joyful Responsible Abundance, held as a direction of hope ra
 
 It combines eight layers:
 
-1. Browser builder pages that export `.md` files for AI import.
+1. Browser working pages that export `.md` files for AI import.
 2. Real-world checks.
 3. Serendipity and spontaneity context.
 4. Romance and intercultural relationship context.
@@ -15,13 +15,13 @@ It combines eight layers:
 7. Agent-team decision trees.
 8. Pattern, intuition, and precognition/planning notes.
 
-## Layer 1: Builder Pages
+## Layer 1: Working Pages
 
 The site should not hide the markdown layer behind repo folders.
 
 The main workflow is:
 
-1. Open a builder page.
+1. Open a working page.
 2. Fill in living context.
 3. Review the generated markdown preview.
 4. Copy or download the `.md` file.
@@ -37,6 +37,8 @@ Current builder outputs:
 - `relationship-field.md`
 - `shared-table-field-note.md`
 - `agent-team-brief.md`
+- `privacy-redaction-review.md`
+- `style-review.md`
 
 ## Layer 2: Real-World Checks
 
@@ -143,6 +145,8 @@ Every run should produce:
 - question
 - candidate destinations
 - source checks
+- Catalyst layers: survival/safety, love/connection, mission multiplier, serendipity
+- Location Readiness Score notes: accessibility, stability, opportunity
 - model summary
 - pattern notes
 - risks

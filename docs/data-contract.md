@@ -2,7 +2,7 @@
 
 This repo uses browser-generated markdown as the first data layer.
 
-The preferred flow is to create working `.md` files from the builder pages, then save or import them into AI tools after human review.
+The preferred flow is to create working `.md` files from the site pages, then save or import them into AI tools after human review.
 
 ## Builder Output Files
 
@@ -14,6 +14,8 @@ The preferred flow is to create working `.md` files from the builder pages, then
 - `relationship-field.md`
 - `shared-table-field-note.md`
 - `agent-team-brief.md`
+- `privacy-redaction-review.md`
+- `style-review.md`
 
 Each builder output includes:
 
@@ -103,6 +105,8 @@ Every strategy run should include:
 - serendipity inputs
 - relationship and cultural context
 - current model
+- Catalyst oracle layers
+- Location Readiness Score notes
 - reason
 - evidence used
 - pattern notes considered separately from evidence

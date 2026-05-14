@@ -3,63 +3,45 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Style Guide | Strange But True Travel Oracle</title>
+    <title>Style Review | Strange But True Travel Oracle</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Nunito+Sans:wght@700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/styles.css">
   </head>
-  <body data-page="style-guide">
+  <body data-page="style-guide" data-builder="styleReview">
     <header class="site-header">
       <nav class="nav" aria-label="Main navigation">
         <a class="brand" href="index.html"><span>Strange But True</span><span>Travel Oracle</span></a>
         <div class="nav-links">
-          <a href="index.html">Home</a><a href="builders.html">Builders</a><a href="agents.html">Agents</a><a href="planning.html">Planning</a><a href="serendipity.html">Serendipity</a><a href="relationships.html">Relationships</a><a href="shared-table.html">Shared Table</a><a href="dossiers.html">Dossiers</a><a href="privacy.html">Privacy</a><a href="style-guide.html">Style</a>
+          <a href="index.html">Home</a>
+          <a href="builders.html">Builders</a>
+          <a href="travel-intake-builder.html">Intake</a>
+          <a href="dossiers.html">Dossiers</a>
+          <a href="planning.html">Strategy</a>
+          <a href="serendipity.html">Serendipity</a>
+          <a href="relationships.html">Relationships</a>
+          <a href="shared-table.html">Shared Table</a>
+          <a href="agents.html">Agents</a>
+          <a href="privacy.html">Privacy</a>
+          <a href="style-guide.html">Style</a>
         </div>
       </nav>
     </header>
-    <main>
-      <section class="page-head">
-        <h1>Calm mission dashboard, not tourist brochure.</h1>
-        <p class="lede">The interface borrows Strange But True readability and colour, then tightens it into a private planning system. Joyful Responsible Abundance is a compass here, not a sermon.</p>
-      </section>
-
-      <section class="section">
-        <div class="grid three">
-          <article class="card"><span class="tag">Voice</span><h3>Plain Australian English</h3><p>Practical, grounded, honest about uncertainty, and free of product hype.</p></article>
-          <article class="card"><span class="tag">Look</span><h3>Night cockpit</h3><p>Dark base, readable panels, bright status colour, and careful spacing.</p></article>
-          <article class="card"><span class="tag">Boundary</span><h3>Evidence lanes</h3><p>Official, operational, strategic, relational, cultural, and pattern notes stay visibly separate.</p></article>
-          <article class="card"><span class="tag">Builders</span><h3>Forms create markdown</h3><p>Each builder page shows fields, a live markdown preview, copy, download, and clear controls.</p></article>
+    <main id="main">
+      <section class="page-head wide">
+        <h1>Build a style review.</h1>
+        <p class="lede">Use this when the site needs a concrete fix: navigation, alignment, wording, builder visibility, mobile layout or the SBT markdown-builder feel.</p>
+        <div class="toolbar">
+          <a class="button secondary" href="docs/style-guide.md">Open style source</a>
+          <a class="button secondary" href="builders.html">Open builder index</a>
         </div>
       </section>
-
-      <section class="section">
-        <div class="section-head">
-          <h2>Colour Roles</h2>
-          <p>Each colour has a job, so the interface does not become a one-note glow wall.</p>
-        </div>
-        <div class="table-wrap">
-          <table>
-            <thead><tr><th>Colour</th><th>Role</th><th>Use</th></tr></thead>
-            <tbody>
-              <tr><td>Cyan</td><td>Navigation and live checks</td><td>Links, active states, private context.</td></tr>
-              <tr><td>Green</td><td>Ready enough</td><td>Acceptable checks and go states.</td></tr>
-              <tr><td>Gold</td><td>Insight and opportunity</td><td>Creative signal, Musicverse, SBT fit.</td></tr>
-              <tr><td>Gold/green</td><td>Shared Table</td><td>Food, hospitality, consent, reciprocity, and cultural context.</td></tr>
-              <tr><td>Orange</td><td>Caution</td><td>Watch, prepare, pause.</td></tr>
-              <tr><td>Red</td><td>Stop</td><td>No-go, never publish, hard risk.</td></tr>
-            </tbody>
-          </table>
-        </div>
-      </section>
-
-      <section class="section">
-        <div class="callout">
-          <strong>Working file:</strong> <a href="docs/style-guide.md">docs/style-guide.md</a>
-        </div>
-      </section>
+      <div data-builder-root></div>
     </main>
     <footer class="footer">Readable first. Strange second. Public only after review.</footer>
     <script src="assets/app.js"></script>
+    <script src="assets/builder-data.js"></script>
+    <script src="assets/builder.js"></script>
   </body>
 </html>

@@ -87,7 +87,7 @@
     },
 
     destination: {
-      page: "destination-dossier-builder.html",
+      page: "dossiers.html",
       fileName: "destination-dossier-{slug}.md",
       schema: "strange_but_true_travel_oracle.destination_dossier.v1",
       storageKey: "sbtTravelOracleDestination",
@@ -138,7 +138,7 @@
     },
 
     strategyRun: {
-      page: "strategy-run-builder.html",
+      page: "planning.html",
       fileName: "strategy-run-{date}.md",
       schema: "strange_but_true_travel_oracle.strategy_run.v1",
       storageKey: "sbtTravelOracleRun",
@@ -165,6 +165,15 @@
             { name: "relationship_output", label: "Romance and intercultural relationship output", type: "textarea", placeholder: "Relational possibilities, consent, law, local norms, privacy, power differences." },
             { name: "shared_table_output", label: "Shared Table output", type: "textarea", placeholder: "Hospitality, food, reciprocity, cultural protocols, public/private story boundaries." },
             { name: "pattern_output", label: "Pattern and precognition output", type: "textarea", placeholder: "Dreams, repeated symbols, intuitive signals, pre-mortems, kept separate from evidence." }
+          ]
+        },
+        {
+          legend: "Catalyst oracle layers",
+          fields: [
+            { name: "survival_safety", label: "Survival and safety layer", type: "textarea", placeholder: "Cash runway, health, Smartraveller-style risk, legal entry, recovery reality, hard no-go triggers." },
+            { name: "love_connection", label: "Love and connection layer", type: "textarea", placeholder: "Intercultural openness, romance reality, consent, local norms, GGM / Love U.N. signal without projecting onto people." },
+            { name: "mission_multiplier", label: "Mission multiplier layer", type: "textarea", placeholder: "SBT, Aura, AI, peace, Shared Table, Musicverse, service, learning or partnership opportunities." },
+            { name: "lrs_notes", label: "Location Readiness Score notes", type: "textarea", placeholder: "Accessibility, stability, opportunity, and what would raise or lower the readiness score." }
           ]
         },
         {
@@ -212,7 +221,7 @@
     },
 
     serendipity: {
-      page: "serendipity-builder.html",
+      page: "serendipity.html",
       fileName: "serendipity-map.md",
       schema: "strange_but_true_travel_oracle.serendipity_map.v1",
       storageKey: "sbtTravelOracleSerendipity",
@@ -244,7 +253,7 @@
     },
 
     relationship: {
-      page: "relationship-field-builder.html",
+      page: "relationships.html",
       fileName: "relationship-field.md",
       schema: "strange_but_true_travel_oracle.relationship_field.v1",
       storageKey: "sbtTravelOracleRelationship",
@@ -276,7 +285,7 @@
     },
 
     sharedTable: {
-      page: "shared-table-builder.html",
+      page: "shared-table.html",
       fileName: "shared-table-field-note.md",
       schema: "strange_but_true_travel_oracle.shared_table_field_note.v1",
       storageKey: "sbtTravelOracleSharedTable",
@@ -308,7 +317,7 @@
     },
 
     agentBrief: {
-      page: "agent-brief-builder.html",
+      page: "agents.html",
       fileName: "agent-team-brief.md",
       schema: "strange_but_true_travel_oracle.agent_team_brief.v1",
       storageKey: "sbtTravelOracleAgentBrief",
@@ -334,6 +343,87 @@
             { name: "privacy_rules", label: "Privacy rules", type: "textarea", placeholder: "Do not expose live location, real people, romance, exact route, money, credentials, or vulnerable details." },
             { name: "insurance_rule", label: "Insurance wording rule", type: "textarea", placeholder: "Only mention insurance where legally, contractually, entry, venue, transport or client-framework required." },
             { name: "output_requested", label: "Output requested", type: "textarea", placeholder: "Dossier update, strategy model run, checklist, questions, next actions, source list, redacted public summary." }
+          ]
+        }
+      ]
+    },
+
+    privacyRedaction: {
+      page: "privacy.html",
+      fileName: "privacy-redaction-review.md",
+      schema: "strange_but_true_travel_oracle.privacy_redaction_review.v1",
+      storageKey: "sbtTravelOraclePrivacy",
+      title: "Build privacy-redaction-review.md",
+      lede: "Review one travel file, page or agent output before anything leaves the private workspace.",
+      markdownTitle: "Privacy Redaction Review",
+      titleField: "review_title",
+      handoff: "Give this to the Privacy and Redaction Agent before sharing, publishing, pushing, exporting or pasting sensitive material into another tool.",
+      groups: [
+        {
+          legend: "Review target",
+          fields: [
+            { name: "review_title", label: "Review title", type: "text", placeholder: "e.g. Kyoto dossier redaction pass, relationship field before agent share" },
+            { name: "target_file", label: "File, page or output being reviewed", type: "text", placeholder: "Filename, page URL, pasted output, or folder path" },
+            { name: "sharing_context", label: "Where might this go?", type: "textarea", placeholder: "Private AI chat, GitHub repo, public site, friend, client, collaborator, archived only." },
+            { name: "current_decision", label: "Current sharing decision", type: "select", options: [["private_only", "Private only"], ["agent_only", "Agent only"], ["redact_first", "Redact first"], ["public_safe_after_review", "Public-safe after review"], ["do_not_share", "Do not share"]] }
+          ]
+        },
+        {
+          legend: "Sensitive material",
+          fields: [
+            { name: "identity_access", label: "Identity, credentials or access risks", type: "textarea", placeholder: "Passport, account, payment, recovery, booking, exact address, active route, or other access material." },
+            { name: "live_movement", label: "Live location or movement risks", type: "textarea", placeholder: "Current location, dates, accommodation, travel timing, transport, routes, vulnerabilities." },
+            { name: "relationships", label: "Relationship and real-person privacy", type: "textarea", placeholder: "Names, attraction, romance, intimacy, GGM reflections, power differences, private contacts." },
+            { name: "financial_vulnerability", label: "Money and vulnerability", type: "textarea", placeholder: "Debt, cashflow, health, family, recovery, loneliness, dependency, conflict, legal status." }
+          ]
+        },
+        {
+          legend: "Redaction action",
+          fields: [
+            { name: "remove", label: "Remove completely", type: "textarea", placeholder: "Lines, fields, names, links, places or claims that should not leave private context." },
+            { name: "generalise", label: "Generalise or abstract", type: "textarea", placeholder: "What can become public-safe philosophy, pattern, style, or non-identifying context?" },
+            { name: "keep_private_reason", label: "Why keep it private?", type: "textarea", placeholder: "Plain reason the private boundary matters here." },
+            { name: "next_action", label: "Next action", type: "textarea", placeholder: "Redact, ask permission, split file, keep local only, share with named agent, archive." }
+          ]
+        }
+      ]
+    },
+
+    styleReview: {
+      page: "style-guide.html",
+      fileName: "style-review.md",
+      schema: "strange_but_true_travel_oracle.style_review.v1",
+      storageKey: "sbtTravelOracleStyleReview",
+      title: "Build style-review.md",
+      lede: "Create a practical review note for navigation, alignment, wording and builder usability.",
+      markdownTitle: "Style Review",
+      titleField: "review_title",
+      handoff: "Give this to Codex or another implementation agent when the site feels confusing, wasteful, misaligned or too generic.",
+      groups: [
+        {
+          legend: "Surface being reviewed",
+          fields: [
+            { name: "review_title", label: "Review title", type: "text", placeholder: "e.g. travel oracle navigation cleanup" },
+            { name: "page_or_component", label: "Page or component", type: "text", placeholder: "Home, builders, planning page, relationship builder, nav, mobile layout" },
+            { name: "screen_size", label: "Screen size or device", type: "text", placeholder: "Desktop, laptop, mobile, browser screenshot size" },
+            { name: "main_problem", label: "Main problem", type: "textarea", placeholder: "What is confusing, ugly, wasteful, misaligned, hidden, too vague, or too generic?" }
+          ]
+        },
+        {
+          legend: "Functional checks",
+          fields: [
+            { name: "builder_visibility", label: "Builder visibility", type: "textarea", placeholder: "Can the user immediately make or download the markdown file? If not, where is it hidden?" },
+            { name: "navigation_clarity", label: "Navigation clarity", type: "textarea", placeholder: "Can the user tell where they are, go back, and move to the next useful page?" },
+            { name: "alignment_spacing", label: "Alignment and spacing", type: "textarea", placeholder: "Which boxes, buttons, panels, headings or controls are off rhythm?" },
+            { name: "language_to_cut", label: "Language to cut", type: "textarea", placeholder: "Non-functional, vague, preachy or space-wasting text to remove." }
+          ]
+        },
+        {
+          legend: "Fix request",
+          fields: [
+            { name: "desired_change", label: "Desired change", type: "textarea", placeholder: "What should the page do instead?" },
+            { name: "keep", label: "Keep intact", type: "textarea", placeholder: "Tone, private boundary, SBT style, Australian English, specific concepts, links." },
+            { name: "proof_needed", label: "Proof needed", type: "textarea", placeholder: "Screenshot, browser check, mobile check, export test, git push verification." }
           ]
         }
       ]

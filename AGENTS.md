@@ -30,11 +30,11 @@ Use Australian English. Explain changes simply. Prefer small markdown updates th
 
 ## Markdown First
 
-The source of truth is markdown, but the preferred human workflow is now browser builders that generate `.md` files for download, copying, and AI import.
+The source of truth is markdown, but the preferred human workflow is now browser working pages that generate `.md` files for download, copying, and AI import.
 
 Agents should understand both layers:
 
-- builder pages create working `.md` files from forms
+- working pages create `.md` files from forms
 - exported `.md` files become the auditable context for AI work
 - repo templates and docs explain structure, but should not be the only way a human creates files
 
@@ -47,16 +47,20 @@ Use these folders:
 - `logs/strategy-runs/` for dated strategy runs.
 - `templates/` for repeatable file formats.
 
-Use these builder pages:
+Use these working pages:
 
 - `travel-intake-builder.html` -> `travel-intake.md`
-- `destination-dossier-builder.html` -> `destination-dossier-{place}.md`
-- `strategy-run-builder.html` -> `strategy-run-{date}.md`
+- `dossiers.html` -> `destination-dossier-{place}.md`
+- `planning.html` -> `strategy-run-{date}.md`
 - `signal-log-builder.html` -> `signal-log-{date}.md`
-- `serendipity-builder.html` -> `serendipity-map.md`
-- `relationship-field-builder.html` -> `relationship-field.md`
-- `shared-table-builder.html` -> `shared-table-field-note.md`
-- `agent-brief-builder.html` -> `agent-team-brief.md`
+- `serendipity.html` -> `serendipity-map.md`
+- `relationships.html` -> `relationship-field.md`
+- `shared-table.html` -> `shared-table-field-note.md`
+- `agents.html` -> `agent-team-brief.md`
+- `privacy.html` -> `privacy-redaction-review.md`
+- `style-guide.html` -> `style-review.md`
+
+The `*-builder.html` files that still exist are direct tool aliases, not the main navigation model.
 
 ## Evidence Levels
 

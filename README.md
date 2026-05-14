@@ -42,9 +42,9 @@ It uses visible browser builders to create markdown files, then treats those `.m
 
 Open `index.html` in a browser for the private dashboard.
 
-Open `builders.html` when you want to generate `.md` files from forms.
+Open `builders.html` when you want the index of working pages.
 
-The dashboard is a readable front door. The builder pages create the working markdown files for AI import.
+The dashboard is a readable front door. Each main page has a short brief plus a functional markdown builder for AI import.
 
 ## Builder Outputs
 
@@ -56,12 +56,15 @@ The dashboard is a readable front door. The builder pages create the working mar
 - `relationship-field.md` - romance, intercultural relationships, consent, law, GGM / Love U.N. context.
 - `shared-table-field-note.md` - food, hospitality, protocol, reciprocity and public/private story boundaries.
 - `agent-team-brief.md` - paste-ready instructions for AI tools working with exported travel strategy files.
+- `privacy-redaction-review.md` - private/public boundary review before sharing.
+- `style-review.md` - concrete UI/content fix request for Codex or another implementation agent.
 
 ## Source Repos
 
 This repo borrows ideas from:
 
 - `Australian-world-travel` - existing visa guide, logistics tracker, document planner, and Catalyst Oracle prototype.
+- `Global_Peace_Through_AI_Travel.md`, `Aura_Travel_Oracle.md`, `Luke's_Travel_Oracle_for_2025_to_2035.md`, and `Designing_a_Dynamic_AI-Powered_Travel_Intelligence_System.md` - source planning documents for the dynamic travel intelligence system, Catalyst Oracle logic, Location Readiness Score, agent orchestration and 2025-2035 mission frame.
 - `the-great-unveiling` - public-facing Journey context.
 - `aura-affinity` - potential contact and place-mapping layer.
 - `space-weather-news` - possible environmental and resilience signal layer.

@@ -9,53 +9,39 @@
     <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Nunito+Sans:wght@700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/styles.css">
   </head>
-  <body data-page="relationships">
+  <body data-page="relationships" data-builder="relationship">
     <header class="site-header">
       <nav class="nav" aria-label="Main navigation">
         <a class="brand" href="index.html"><span>Strange But True</span><span>Travel Oracle</span></a>
         <div class="nav-links">
-          <a href="index.html">Home</a><a href="builders.html">Builders</a><a href="agents.html">Agents</a><a href="planning.html">Planning</a><a href="serendipity.html">Serendipity</a><a href="relationships.html">Relationships</a><a href="shared-table.html">Shared Table</a><a href="dossiers.html">Dossiers</a><a href="privacy.html">Privacy</a><a href="style-guide.html">Style</a>
+          <a href="index.html">Home</a>
+          <a href="builders.html">Builders</a>
+          <a href="travel-intake-builder.html">Intake</a>
+          <a href="dossiers.html">Dossiers</a>
+          <a href="planning.html">Strategy</a>
+          <a href="serendipity.html">Serendipity</a>
+          <a href="relationships.html">Relationships</a>
+          <a href="shared-table.html">Shared Table</a>
+          <a href="agents.html">Agents</a>
+          <a href="privacy.html">Privacy</a>
+          <a href="style-guide.html">Style</a>
         </div>
       </nav>
     </header>
-    <main>
-      <section class="page-head">
-        <h1>Love is not a side quest.</h1>
-        <p class="lede">This lane holds romance, attraction, intercultural relationships, kinship, consent, family systems, and Global Group Marriages as private philosophy.</p>
+    <main id="main">
+      <section class="page-head wide">
+        <h1>Build the relational field.</h1>
+        <p class="lede">Romance, intercultural relationships and Global Group Marriages belong in a private markdown field, with consent and real people kept ahead of theory.</p>
         <div class="toolbar">
-          <a class="button gold" href="relationship-field-builder.html">Build relationship-field.md</a>
-          <a class="button" href="docs/relationships-context.md">Open context note</a>
+          <a class="button secondary" href="docs/relationships-context.md">Open source context</a>
           <a class="button secondary" href="https://globalgroupmarriages.com" target="_blank" rel="noopener noreferrer">Open GGM</a>
         </div>
       </section>
-
-      <section class="section">
-        <div class="grid three">
-          <article class="card"><span class="status gold">Relational</span><h3>What is actually present?</h3><p>Attraction, friendship, romance, care, invitation, language, family context, or a pattern worth reflecting on.</p></article>
-          <article class="card"><span class="status green">Consent</span><h3>What keeps it clean?</h3><p>Law, local norms, boundaries, power differences, money, age, visa status, public visibility, and privacy.</p></article>
-          <article class="card"><span class="status private">GGM</span><h3>What does it illuminate?</h3><p>Love U.N., fractal kinship, world-family, care governance, and the limits of theory when real people are involved.</p></article>
-        </div>
-      </section>
-
-      <section class="section">
-        <div class="section-head">
-          <h2>Relational Field Questions</h2>
-          <p>These are private thinking prompts, not performance prompts.</p>
-        </div>
-        <div class="table-wrap">
-          <table>
-            <thead><tr><th>Question</th><th>Why it matters</th><th>Boundary</th></tr></thead>
-            <tbody>
-              <tr><td>What is real, not projected?</td><td>Stops fantasy from overriding the actual person or situation.</td><td>No treating people as symbols.</td></tr>
-              <tr><td>What is legal and culturally respectful?</td><td>Keeps intercultural connection grounded.</td><td>No imported assumptions.</td></tr>
-              <tr><td>What power differences exist?</td><td>Names money, visa, age, language, status, gender, and public exposure.</td><td>No hidden leverage.</td></tr>
-              <tr><td>Does GGM help or distort?</td><td>Lets the big theory inform the field without swallowing it.</td><td>No projecting the model onto real people.</td></tr>
-            </tbody>
-          </table>
-        </div>
-      </section>
+      <div data-builder-root></div>
     </main>
     <footer class="footer">People are not content, proof, tokens, or project resources.</footer>
     <script src="assets/app.js"></script>
+    <script src="assets/builder-data.js"></script>
+    <script src="assets/builder.js"></script>
   </body>
 </html>

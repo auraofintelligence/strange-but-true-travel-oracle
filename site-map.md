@@ -5,27 +5,27 @@ This repo must not collapse into a single `index.html`.
 ## Dashboard Pages
 
 - `index.html` - private command centre.
-- `builders.html` - builder index for site-generated `.md` files.
-- `agents.html` - agent team overview and handoffs.
-- `planning.html` - real-time and precognition/planning workflow.
-- `serendipity.html` - chance, spontaneity, invitations, and useful surprise.
-- `relationships.html` - romance, intercultural relationships, and Global Group Marriages context.
-- `shared-table.html` - recurring global table, food, hospitality and cultural-context lens.
-- `dossiers.html` - destination dossier index.
-- `privacy.html` - private boundary and publication rules.
-- `style-guide.html` - visual and writing style guide.
+- `builders.html` - index of working pages. It is not the only builder surface.
+- `travel-intake-builder.html` - intake working page, exports `travel-intake.md`.
+- `dossiers.html` - destination dossier working page, exports `destination-dossier-{place}.md`.
+- `planning.html` - strategy-run working page, exports `strategy-run-{date}.md`.
+- `serendipity.html` - serendipity working page, exports `serendipity-map.md`.
+- `relationships.html` - relationship-field working page, exports `relationship-field.md`.
+- `shared-table.html` - shared-table working page, exports `shared-table-field-note.md`.
+- `agents.html` - agent-brief working page, exports `agent-team-brief.md`.
+- `privacy.html` - privacy redaction working page, exports `privacy-redaction-review.md`.
+- `style-guide.html` - style-review working page, exports `style-review.md`.
 - `docs/shared-table-context.md` - recurring Shared Table theme and cultural protocol lens.
 
-## Builder Pages
+## Direct Builder Aliases
 
-- `travel-intake-builder.html` - exports `travel-intake.md`.
-- `destination-dossier-builder.html` - exports `destination-dossier-{place}.md`.
-- `strategy-run-builder.html` - exports `strategy-run-{date}.md`.
+- `destination-dossier-builder.html` - direct alias for the destination dossier builder.
+- `strategy-run-builder.html` - direct alias for the strategy-run builder.
 - `signal-log-builder.html` - exports `signal-log-{date}.md`.
-- `serendipity-builder.html` - exports `serendipity-map.md`.
-- `relationship-field-builder.html` - exports `relationship-field.md`.
-- `shared-table-builder.html` - exports `shared-table-field-note.md`.
-- `agent-brief-builder.html` - exports `agent-team-brief.md`.
+- `serendipity-builder.html` - direct alias for the serendipity builder.
+- `relationship-field-builder.html` - direct alias for the relationship-field builder.
+- `shared-table-builder.html` - direct alias for the shared-table builder.
+- `agent-brief-builder.html` - direct alias for the agent-brief builder.
 
 ## Markdown System
 

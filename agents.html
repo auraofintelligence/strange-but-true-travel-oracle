@@ -3,48 +3,45 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Agent Teams | Strange But True Travel Oracle</title>
+    <title>Agent Brief | Strange But True Travel Oracle</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Nunito+Sans:wght@700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/styles.css">
   </head>
-  <body data-page="agents">
+  <body data-page="agents" data-builder="agentBrief">
     <header class="site-header">
       <nav class="nav" aria-label="Main navigation">
         <a class="brand" href="index.html"><span>Strange But True</span><span>Travel Oracle</span></a>
         <div class="nav-links">
-          <a href="index.html">Home</a><a href="builders.html">Builders</a><a href="agents.html">Agents</a><a href="planning.html">Planning</a><a href="serendipity.html">Serendipity</a><a href="relationships.html">Relationships</a><a href="shared-table.html">Shared Table</a><a href="dossiers.html">Dossiers</a><a href="privacy.html">Privacy</a><a href="style-guide.html">Style</a>
+          <a href="index.html">Home</a>
+          <a href="builders.html">Builders</a>
+          <a href="travel-intake-builder.html">Intake</a>
+          <a href="dossiers.html">Dossiers</a>
+          <a href="planning.html">Strategy</a>
+          <a href="serendipity.html">Serendipity</a>
+          <a href="relationships.html">Relationships</a>
+          <a href="shared-table.html">Shared Table</a>
+          <a href="agents.html">Agents</a>
+          <a href="privacy.html">Privacy</a>
+          <a href="style-guide.html">Style</a>
         </div>
       </nav>
     </header>
-    <main>
-      <section class="page-head">
-        <h1>Agent teams manage the thinking.</h1>
-        <p class="lede">Each agent owns a clear lane, writes markdown notes, and hands off to synthesis before a recommendation is made.</p>
+    <main id="main">
+      <section class="page-head wide">
+        <h1>Build the agent team brief.</h1>
+        <p class="lede">Paste this markdown into an AI tool with the exported travel files so the agent team knows what to preserve, check, redact and hand back.</p>
         <div class="toolbar">
-          <a class="button gold" href="agent-brief-builder.html">Build agent-team-brief.md</a>
-          <a class="button secondary" href="travel-intake-builder.html">Build intake</a>
+          <a class="button secondary" href="agents/README.md">Open agent roster</a>
+          <a class="button secondary" href="travel-intake-builder.html">Start intake first</a>
         </div>
       </section>
-
-      <section class="section">
-        <div class="grid two">
-          <article class="row-card"><span class="tag">01</span><div><h3>Intake Agent</h3><p>Turns a messy travel thought into a clear question.</p></div><a href="agents/01-intake-agent.md">Open</a></article>
-          <article class="row-card"><span class="tag">02</span><div><h3>Safety and Consular Agent</h3><p>Checks official safety and support conditions first.</p></div><a href="agents/02-safety-and-consular-agent.md">Open</a></article>
-          <article class="row-card"><span class="tag">03</span><div><h3>Visa and Logistics Agent</h3><p>Checks entry, stay, documents, and practical arrival requirements.</p></div><a href="agents/03-visa-logistics-agent.md">Open</a></article>
-          <article class="row-card"><span class="tag">04</span><div><h3>Route and Budget Agent</h3><p>Tests whether the move survives real route and money constraints.</p></div><a href="agents/04-route-and-budget-agent.md">Open</a></article>
-          <article class="row-card"><span class="tag">05</span><div><h3>Serendipity and Spontaneity Agent</h3><p>Keeps chance, invitation, timing, drift, and useful surprise in the model.</p></div><a href="agents/05-serendipity-spontaneity-agent.md">Open</a></article>
-          <article class="row-card"><span class="tag">06</span><div><h3>Romance and Intercultural Relationships Agent</h3><p>Tracks attraction, consent, local norms, relationship possibility, and GGM context.</p></div><a href="agents/06-romance-intercultural-agent.md">Open</a></article>
-          <article class="row-card"><span class="tag">07</span><div><h3>Opportunity and SBT Agent</h3><p>Checks service, writing, Musicverse, and banner value.</p></div><a href="agents/07-opportunity-and-sbt-agent.md">Open</a></article>
-          <article class="row-card"><span class="tag">08</span><div><h3>Shared Table and Cultural Context Agent</h3><p>Tracks food, hospitality, consent, safety, reciprocity, and public/private cultural boundaries.</p></div><a href="agents/08-shared-table-cultural-agent.md">Open</a></article>
-          <article class="row-card"><span class="tag">09</span><div><h3>Precognition and Planning Agent</h3><p>Separates pattern notes from evidence and turns signal into checks.</p></div><a href="agents/09-precognition-planning-agent.md">Open</a></article>
-          <article class="row-card"><span class="tag">10</span><div><h3>Synthesis Agent</h3><p>Combines notes into a dated recommendation.</p></div><a href="agents/10-synthesis-agent.md">Open</a></article>
-          <article class="row-card"><span class="tag">11</span><div><h3>Privacy and Redaction Agent</h3><p>Reviews before sharing, pushing, exporting, or publishing.</p></div><a href="agents/11-privacy-redaction-agent.md">Open</a></article>
-        </div>
-      </section>
+      <div data-builder-root></div>
     </main>
-    <footer class="footer">Every agent note ends with recommendation, risks, open questions, and next action.</footer>
+    <footer class="footer">Every agent handoff ends with recommendation, risks, open questions and next action.</footer>
     <script src="assets/app.js"></script>
+    <script src="assets/builder-data.js"></script>
+    <script src="assets/builder.js"></script>
   </body>
 </html>

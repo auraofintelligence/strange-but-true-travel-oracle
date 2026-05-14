@@ -17,6 +17,19 @@ Useful files:
 
 Use: extract ideas and data shapes, not blind-copy the old interface.
 
+## Travel Oracle source documents
+
+Role: private source material for the SBT markdown-builder component.
+
+Useful files:
+
+- `Designing_a_Dynamic_AI-Powered_Travel_Intelligence_System.md` - dynamic data ingestion, agent orchestration, real-time adaptation, and human-in-the-loop workflow.
+- `Global_Peace_Through_AI_Travel.md` - 256-location mission frame, visa triage, Location Readiness Score, and AI/peace opportunity mapping.
+- `Aura_Travel_Oracle.md` - earlier Aura Travel interface exports and travel tool prototypes.
+- `Luke's_Travel_Oracle_for_2025_to_2035.md` - personal 2025-2035 travel oracle logic: survival, love, mission, serendipity, and next-best-action reasoning.
+
+Use: convert the high-level and data-heavy source material into small auditable `.md` outputs, not another passive report.
+
 ## the-great-unveiling
 
 Role: wider Aura journey framing.

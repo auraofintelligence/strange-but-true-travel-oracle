@@ -9,81 +9,39 @@
     <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Nunito+Sans:wght@700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/styles.css">
   </head>
-  <body data-page="dossiers">
+  <body data-page="dossiers" data-builder="destination">
     <header class="site-header">
       <nav class="nav" aria-label="Main navigation">
         <a class="brand" href="index.html"><span>Strange But True</span><span>Travel Oracle</span></a>
         <div class="nav-links">
-          <a href="index.html">Home</a><a href="builders.html">Builders</a><a href="agents.html">Agents</a><a href="planning.html">Planning</a><a href="serendipity.html">Serendipity</a><a href="relationships.html">Relationships</a><a href="shared-table.html">Shared Table</a><a href="dossiers.html">Dossiers</a><a href="privacy.html">Privacy</a><a href="style-guide.html">Style</a>
+          <a href="index.html">Home</a>
+          <a href="builders.html">Builders</a>
+          <a href="travel-intake-builder.html">Intake</a>
+          <a href="dossiers.html">Dossiers</a>
+          <a href="planning.html">Strategy</a>
+          <a href="serendipity.html">Serendipity</a>
+          <a href="relationships.html">Relationships</a>
+          <a href="shared-table.html">Shared Table</a>
+          <a href="agents.html">Agents</a>
+          <a href="privacy.html">Privacy</a>
+          <a href="style-guide.html">Style</a>
         </div>
       </nav>
     </header>
-    <main>
-      <section class="page-head">
-        <h1>Destination dossiers start as markdown.</h1>
-        <p class="lede">One destination, one exported file, clear source notes, and no sensitive documents pasted into the repo.</p>
+    <main id="main">
+      <section class="page-head wide">
+        <h1>Build a destination dossier.</h1>
+        <p class="lede">One place, one markdown file: official checks, visa friction, route and budget, romance, Shared Table, Musicverse, opportunity and open questions.</p>
         <div class="toolbar">
-          <a class="button gold" href="destination-dossier-builder.html">Build destination-dossier.md</a>
-          <a class="button secondary" href="builders.html">Open all builders</a>
+          <a class="button secondary" href="https://auraofintelligence.github.io/Australian-world-travel/" target="_blank" rel="noopener noreferrer">Open visa guide</a>
+          <a class="button secondary" href="data/sources/source-register.md">Open source register</a>
         </div>
       </section>
-
-      <section class="section">
-        <div class="grid three">
-          <article class="card">
-            <span class="tag">Builder</span>
-            <h3>Destination dossier</h3>
-            <p>Country, city, safety, visa, budget, serendipity, relationships, Shared Table, Musicverse, risks, and sources.</p>
-            <a class="button secondary" href="destination-dossier-builder.html">Open builder</a>
-          </article>
-          <article class="card">
-            <span class="tag">Register</span>
-            <h3>Source register</h3>
-            <p>Official and operational sources to check before action.</p>
-            <a class="button secondary" href="data/sources/source-register.md">Open sources</a>
-          </article>
-          <article class="card">
-            <span class="tag">Cultural lens</span>
-            <h3>Shared Table context</h3>
-            <p>Food, hospitality, gathering, protocol, consent, and story-boundary questions for every place.</p>
-            <a class="button secondary" href="docs/shared-table-context.md">Open context</a>
-          </article>
-          <article class="card">
-            <span class="tag">Relational field</span>
-            <h3>Relationships context</h3>
-            <p>Romance, intercultural relationships, consent, kinship, and GGM reflection prompts.</p>
-            <a class="button secondary" href="docs/relationships-context.md">Open context</a>
-          </article>
-          <article class="card">
-            <span class="tag">Folder</span>
-            <h3>Dossier folder</h3>
-            <p>Destination notes live under `data/destinations/`.</p>
-            <a class="button secondary" href="data/destinations/README.md">Open index</a>
-          </article>
-        </div>
-      </section>
-
-      <section class="section">
-        <div class="section-head">
-          <h2>Dossier Statuses</h2>
-          <p>Status values keep a destination from sounding more ready than it is.</p>
-        </div>
-        <div class="table-wrap">
-          <table>
-            <thead><tr><th>Status</th><th>Meaning</th><th>Action</th></tr></thead>
-            <tbody>
-              <tr><td>draft</td><td>Early note.</td><td>Fill template.</td></tr>
-              <tr><td>needs-official-check</td><td>Unofficial or stale data.</td><td>Check primary sources.</td></tr>
-              <tr><td>watch</td><td>Worth observing.</td><td>Set next check date.</td></tr>
-              <tr><td>candidate</td><td>Possible destination.</td><td>Model candidate strategy.</td></tr>
-              <tr><td>active-plan</td><td>Being prepared.</td><td>Privacy and logistics review.</td></tr>
-              <tr><td>archive</td><td>No longer current.</td><td>Keep for reference only.</td></tr>
-            </tbody>
-          </table>
-        </div>
-      </section>
+      <div data-builder-root></div>
     </main>
-    <footer class="footer">Do not store passport numbers, booking references, or live addresses in dossiers.</footer>
+    <footer class="footer">No passport numbers, booking references, live addresses or active route details.</footer>
     <script src="assets/app.js"></script>
+    <script src="assets/builder-data.js"></script>
+    <script src="assets/builder.js"></script>
   </body>
 </html>

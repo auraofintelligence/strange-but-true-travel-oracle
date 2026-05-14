@@ -9,57 +9,39 @@
     <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Nunito+Sans:wght@700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/styles.css">
   </head>
-  <body data-page="shared-table">
+  <body data-page="shared-table" data-builder="sharedTable">
     <header class="site-header">
       <nav class="nav" aria-label="Main navigation">
         <a class="brand" href="index.html"><span>Strange But True</span><span>Travel Oracle</span></a>
         <div class="nav-links">
-          <a href="index.html">Home</a><a href="builders.html">Builders</a><a href="agents.html">Agents</a><a href="planning.html">Planning</a><a href="serendipity.html">Serendipity</a><a href="relationships.html">Relationships</a><a href="shared-table.html">Shared Table</a><a href="dossiers.html">Dossiers</a><a href="privacy.html">Privacy</a><a href="style-guide.html">Style</a>
+          <a href="index.html">Home</a>
+          <a href="builders.html">Builders</a>
+          <a href="travel-intake-builder.html">Intake</a>
+          <a href="dossiers.html">Dossiers</a>
+          <a href="planning.html">Strategy</a>
+          <a href="serendipity.html">Serendipity</a>
+          <a href="relationships.html">Relationships</a>
+          <a href="shared-table.html">Shared Table</a>
+          <a href="agents.html">Agents</a>
+          <a href="privacy.html">Privacy</a>
+          <a href="style-guide.html">Style</a>
         </div>
       </nav>
     </header>
-    <main>
-      <section class="page-head">
-        <h1>Every destination has a table.</h1>
-        <p class="lede">The Shared Table theme follows food, hospitality, consent, safety, reciprocity, and cultural context across the world.</p>
+    <main id="main">
+      <section class="page-head wide">
+        <h1>Build the shared table field note.</h1>
+        <p class="lede">This page turns food, hospitality, reciprocity and cultural protocol into an agent-ready note for one place or route.</p>
         <div class="toolbar">
-          <a class="button gold" href="shared-table-builder.html">Build shared-table-field-note.md</a>
-          <a class="button" href="docs/shared-table-context.md">Open context note</a>
+          <a class="button secondary" href="docs/shared-table-context.md">Open source context</a>
           <a class="button secondary" href="https://auraofintelligence.github.io/shared-table-initiative/" target="_blank" rel="noopener noreferrer">Open Shared Table Initiative</a>
         </div>
       </section>
-
-      <section class="section">
-        <div class="section-head">
-          <h2>The Travel Pattern</h2>
-          <p>Do not copy the Straddie model everywhere. Use it as a respectful way to notice how each place gathers and cares.</p>
-        </div>
-        <div class="grid three">
-          <article class="card"><span class="status gold">Gather</span><h3>Where people meet</h3><p>Markets, kitchens, halls, temples, cafes, shelters, hostels, gardens, farms, and family tables.</p></article>
-          <article class="card"><span class="status orange">Check</span><h3>Permission and safety</h3><p>Food safety, cultural protocol, photography consent, local law, and whether a visitor should stay quiet.</p></article>
-          <article class="card"><span class="status green">Share</span><h3>Only where invited</h3><p>Reciprocity first. Public story only after privacy, consent, and cultural context are clear.</p></article>
-        </div>
-      </section>
-
-      <section class="section">
-        <div class="section-head">
-          <h2>Dossier Questions</h2>
-          <p>These repeat in every destination dossier.</p>
-        </div>
-        <div class="table-wrap">
-          <table>
-            <thead><tr><th>Question</th><th>Why it matters</th><th>Evidence lane</th></tr></thead>
-            <tbody>
-              <tr><td>Who feeds the community here?</td><td>Finds real care systems, not tourist surfaces.</td><td>cultural / operational</td></tr>
-              <tr><td>What does hospitality require?</td><td>Protects local protocol and prevents awkward extraction.</td><td>cultural</td></tr>
-              <tr><td>What should not be photographed or public?</td><td>Keeps trust, grief, sacred practice, scarcity, and private hosts safe.</td><td>privacy</td></tr>
-              <tr><td>Could this become a public-safe reflection later?</td><td>Allows writing without rushing live travel into content.</td><td>strategic</td></tr>
-            </tbody>
-          </table>
-        </div>
-      </section>
+      <div data-builder-root></div>
     </main>
     <footer class="footer">Food is relationship first. Content is optional and later.</footer>
     <script src="assets/app.js"></script>
+    <script src="assets/builder-data.js"></script>
+    <script src="assets/builder.js"></script>
   </body>
 </html>
