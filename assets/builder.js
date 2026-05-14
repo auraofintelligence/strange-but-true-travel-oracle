@@ -4,6 +4,19 @@
   const builderKey = body.dataset.builder;
   const indexMount = document.querySelector("[data-builder-index]");
   const root = document.querySelector("[data-builder-root]");
+  const builderFlow = [
+    "intake",
+    "destination",
+    "legalBridge",
+    "strategyRun",
+    "signalLog",
+    "serendipity",
+    "relationship",
+    "sharedTable",
+    "agentBrief",
+    "privacyRedaction",
+    "styleReview"
+  ];
 
   function todayStamp() {
     const parts = new Intl.DateTimeFormat("en-AU", {
@@ -358,6 +371,57 @@
     return trail;
   }
 
+  function builderFlowEntries() {
+    return builderFlow
+      .filter((key) => builders[key])
+      .map((key) => [key, builders[key]]);
+  }
+
+  function adjacentBuilders() {
+    const entries = builderFlowEntries();
+    const index = entries.findIndex(([key]) => key === builderKey);
+    return {
+      currentIndex: index,
+      total: entries.length,
+      previous: index > 0 ? entries[index - 1][1] : null,
+      next: index >= 0 && index < entries.length - 1 ? entries[index + 1][1] : null
+    };
+  }
+
+  function renderPagerItem(direction, config, fallbackText) {
+    const item = document.createElement(config ? "a" : "span");
+    item.className = "form-pager-item" + (config ? "" : " is-disabled");
+    if (config) item.href = config.page;
+
+    const eyebrow = document.createElement("span");
+    eyebrow.className = "form-pager-eyebrow";
+    eyebrow.textContent = direction;
+
+    const title = document.createElement("strong");
+    title.textContent = config ? config.markdownTitle : fallbackText;
+
+    item.append(eyebrow, title);
+    return item;
+  }
+
+  function renderBuilderPager() {
+    const adjacent = adjacentBuilders();
+    const pager = document.createElement("nav");
+    pager.className = "form-pager";
+    pager.setAttribute("aria-label", "Form sequence navigation");
+
+    const previous = renderPagerItem("Previous form", adjacent.previous, "Start of forms");
+    const position = document.createElement("p");
+    position.className = "form-pager-position";
+    position.textContent = adjacent.currentIndex >= 0
+      ? "Form " + (adjacent.currentIndex + 1) + " of " + adjacent.total
+      : "Form sequence";
+    const next = renderPagerItem("Next form", adjacent.next, "End of forms");
+
+    pager.append(previous, position, next);
+    return pager;
+  }
+
   function renderBuilderPage(config) {
     if (!root) return;
 
@@ -393,7 +457,7 @@
     const status = document.createElement("p");
     status.className = "status-message";
     status.setAttribute("aria-live", "polite");
-    form.append(actions, status);
+    form.append(actions, status, renderBuilderPager());
 
     const outputPanel = document.createElement("aside");
     outputPanel.className = "output-panel";

@@ -829,6 +829,66 @@ tr:last-child td {
   gap: 0.7rem;
 }
 
+.form-pager {
+  align-items: stretch;
+  border-top: 1px solid rgba(247, 243, 255, 0.1);
+  display: grid;
+  gap: 0.7rem;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+  margin-top: 0.2rem;
+  padding-top: 1rem;
+}
+
+.form-pager-item {
+  background: rgba(255, 255, 255, 0.045);
+  border: 1px solid rgba(247, 243, 255, 0.14);
+  border-radius: 8px;
+  color: var(--text);
+  display: grid;
+  gap: 0.18rem;
+  min-height: 4rem;
+  min-width: 0;
+  padding: 0.75rem;
+  text-decoration: none;
+}
+
+.form-pager-item:last-child {
+  text-align: right;
+}
+
+.form-pager-item:hover,
+.form-pager-item:focus {
+  border-color: rgba(95, 216, 255, 0.48);
+  outline: 2px solid rgba(95, 216, 255, 0.18);
+}
+
+.form-pager-item.is-disabled {
+  color: var(--quiet);
+  opacity: 0.72;
+}
+
+.form-pager-eyebrow,
+.form-pager-position {
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.form-pager-item strong {
+  font-family: var(--heading);
+  font-size: 0.95rem;
+  line-height: 1.15;
+  overflow-wrap: anywhere;
+}
+
+.form-pager-position {
+  align-self: center;
+  margin: 0;
+  min-width: 5rem;
+  text-align: center;
+}
+
 .builder-trail {
   align-items: center;
   background: rgba(32, 32, 51, 0.88);
@@ -992,6 +1052,15 @@ tr:last-child td {
 
   .builder-trail-links {
     justify-content: start;
+  }
+
+  .form-pager {
+    grid-template-columns: 1fr;
+  }
+
+  .form-pager-item:last-child,
+  .form-pager-position {
+    text-align: left;
   }
 
   .anchor-links {
