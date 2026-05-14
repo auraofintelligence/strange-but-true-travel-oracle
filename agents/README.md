@@ -2,7 +2,7 @@
 
 The Travel Oracle works through small specialist agents.
 
-Each agent produces markdown notes. The Synthesis Agent combines them into a dated oracle run.
+Each agent produces markdown notes. The Synthesis Agent combines them into a dated strategy run.
 
 ## Team
 

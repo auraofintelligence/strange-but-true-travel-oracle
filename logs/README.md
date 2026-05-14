@@ -1,10 +1,10 @@
 # Logs
 
-Use this folder for dated oracle runs and signal logs.
+Use this folder for dated strategy runs and signal logs.
 
 ## Folder
 
-- `oracle-runs/` - dated decision notes.
+- `strategy-runs/` - dated strategy model notes.
 
 ## Naming
 

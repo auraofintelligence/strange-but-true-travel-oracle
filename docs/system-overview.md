@@ -1,6 +1,6 @@
 # System Overview
 
-The Travel Oracle is a private markdown-builder-first operating system.
+This site is a private markdown-builder-first operating system for feeding a future Travel Oracle.
 
 Its core compass is Joyful Responsible Abundance, held as a direction of hope rather than a claim that Luke already has enough of it.
 
@@ -31,7 +31,7 @@ Current builder outputs:
 
 - `travel-intake.md`
 - `destination-dossier-{place}.md`
-- `oracle-run-{date}.md`
+- `strategy-run-{date}.md`
 - `signal-log-{date}.md`
 - `serendipity-map.md`
 - `relationship-field.md`
@@ -54,7 +54,7 @@ These are practical and must be verified close to action:
 
 ## Layer 3: Serendipity and Spontaneity Context
 
-The oracle should not crush all chance out of the journey.
+The future oracle should not crush all chance out of the journey.
 
 Useful checks:
 
@@ -116,7 +116,7 @@ Agents own different parts of the work:
 - Synthesis Agent
 - Privacy and Redaction Agent
 
-Each agent writes markdown notes. The Synthesis Agent turns those notes into a dated oracle run.
+Each agent writes markdown notes. The Synthesis Agent turns those notes into a dated strategy run.
 
 ## Layer 8: Pattern Notes
 
@@ -135,7 +135,7 @@ They can include:
 
 They must be kept separate from official evidence.
 
-## Standard Oracle Run
+## Standard Strategy Run
 
 Every run should produce:
 
@@ -143,10 +143,10 @@ Every run should produce:
 - question
 - candidate destinations
 - source checks
-- score summary
+- model summary
 - pattern notes
 - risks
 - what would change the answer
 - recommended next action
 
-Use `templates/oracle-run.md`.
+Use `templates/strategy-run.md`.

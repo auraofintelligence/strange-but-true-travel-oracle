@@ -6,21 +6,23 @@ status: draft
 privacy: private
 ---
 
-# Oracle Run
+# Strategy run
 
 ## Question
 
-What is being decided?
+What route, place, timing, relationship, table, work or recovery strategy is being modelled?
 
 ## Candidate Destinations
 
 - 
 
-## Summary Recommendation
+## Mixed Preferences
 
-- Recommendation:
-- Confidence:
-- Status:
+- What I want:
+- What I need:
+- What I cannot afford:
+- What I should not force:
+- What I am curious about:
 
 ## Joyful Responsible Abundance Compass
 
@@ -44,18 +46,28 @@ What is being decided?
 | Precognition and Planning |  |  |
 | Privacy and Redaction |  |  |
 
-## Score
+## Strategy Model
 
-| Category | Score | Notes |
-| --- | ---: | --- |
+- Current model:
+- Strategy band:
+- Strongest evidence:
+- Strongest serendipity signal:
+- Main blocker:
+- Privacy boundary:
+
+## Preference Weights
+
+| Lane | Weight | Notes |
+| --- | --- | --- |
 | Safety and consular viability |  |  |
 | Visa and legal feasibility |  |  |
 | Budget and route feasibility |  |  |
+| Timing and recovery |  |  |
 | Serendipity and spontaneity |  |  |
 | Romance and intercultural relationships |  |  |
 | Strange But True fit |  |  |
 | Shared Table and cultural context |  |  |
-| Timing and recovery |  |  |
+| Musicverse and creative signal |  |  |
 | Contacts and opportunity |  |  |
 | Pattern/planning signal |  |  |
 

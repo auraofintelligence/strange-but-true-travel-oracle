@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Turn a messy travel thought into a clear oracle question.
+Turn a messy travel thought into a clear strategy question.
 
 ## Inputs
 

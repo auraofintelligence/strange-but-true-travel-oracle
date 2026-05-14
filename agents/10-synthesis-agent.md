@@ -17,7 +17,7 @@ Combine agent notes into a clear recommendation.
 
 ## Output
 
-Use `templates/oracle-run.md`.
+Use `templates/strategy-run.md`.
 
 Always include:
 

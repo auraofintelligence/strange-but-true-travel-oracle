@@ -19,13 +19,13 @@ Write like a calm field notebook:
 
 The public banner is Strange But True.
 
-Joyful Responsible Abundance is a compass, not a declaration of arrival. The oracle can map towards it while staying honest that Luke does not yet have enough of it in his own life.
+Joyful Responsible Abundance is a compass, not a declaration of arrival. The dataset can map towards it while staying honest that Luke does not yet have enough of it in his own life.
 
 The private voice can be more direct:
 
 - "Luke is travelling under the Strange But True banner."
 - "This trip should produce useful work, not just motion."
-- "The oracle can suggest, but Luke decides."
+- "The model can suggest, but Luke decides."
 - "Joyful Responsible Abundance is a direction of hope, not a sermon."
 
 ## Interface Feel
@@ -48,7 +48,7 @@ Avoid a generic tourist-site feel. This is more like a quiet mission dashboard:
 - Exported files should be agent-ready and readable in plain text.
 - Keep the output private by default.
 - Do not store sensitive live route, identity, romance, money, or contact details in public-safe files.
-- Use `.md` filenames that explain their role, such as `travel-intake.md`, `oracle-run-{date}.md`, or `relationship-field.md`.
+- Use `.md` filenames that explain their role, such as `travel-intake.md`, `strategy-run-{date}.md`, or `relationship-field.md`.
 
 ## Colour Notes
 

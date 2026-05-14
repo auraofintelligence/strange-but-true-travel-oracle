@@ -6,7 +6,7 @@ Start here:
 
 - [Next destination](next-destination.md)
 - [Go/no-go](go-no-go.md)
-- [Oracle score](oracle-score.md)
+- [Strategy preference model](strategy-preference-model.md)
 
 ## Decision Rule
 

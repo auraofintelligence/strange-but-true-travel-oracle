@@ -8,7 +8,7 @@ The preferred flow is to create working `.md` files from the builder pages, then
 
 - `travel-intake.md`
 - `destination-dossier-{place}.md`
-- `oracle-run-{date}.md`
+- `strategy-run-{date}.md`
 - `signal-log-{date}.md`
 - `serendipity-map.md`
 - `relationship-field.md`
@@ -91,16 +91,20 @@ privacy: private
 - `redaction-needed`
 - `public-safe-summary`
 
-## Decision Record Shape
+## Strategy Run Shape
 
-Every final or near-final decision should include:
+Every strategy run should include:
 
-- decision
 - date
-- options considered
+- strategy question
+- candidate places, routes or plans
+- mixed preferences
+- constraints and gates
+- serendipity inputs
+- relationship and cultural context
+- current model
 - reason
-- blockers
 - evidence used
-- pattern notes considered
+- pattern notes considered separately from evidence
 - what would reverse the decision
 - next check date

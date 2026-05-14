@@ -54,7 +54,7 @@
       lede: "Capture the current human situation before agents start scoring destinations.",
       markdownTitle: "Travel Intake",
       titleField: "working_title",
-      handoff: "Give this file to the Intake Agent first. It should become the shared context for all later destination, oracle-run, relationship, serendipity and privacy files.",
+      handoff: "Give this file to the Intake Agent first. It should become the shared context for all later destination, strategy-run, relationship, serendipity and privacy files.",
       groups: [
         {
           legend: "Current frame",
@@ -131,34 +131,34 @@
           fields: [
             { name: "risks", label: "Risks and blockers", type: "textarea", placeholder: "What could make this wrong, unsafe, unaffordable, disrespectful, or too exposed?" },
             { name: "open_questions", label: "Open questions", type: "textarea", placeholder: "Official links to check, people to ask, dates to confirm, facts still missing." },
-            { name: "next_actions", label: "Next actions", type: "textarea", placeholder: "Small practical steps before the next oracle run." }
+            { name: "next_actions", label: "Next actions", type: "textarea", placeholder: "Small practical steps before the next strategy run." }
           ]
         }
       ]
     },
 
-    oracleRun: {
-      page: "oracle-run-builder.html",
-      fileName: "oracle-run-{date}.md",
-      schema: "strange_but_true_travel_oracle.oracle_run.v1",
+    strategyRun: {
+      page: "strategy-run-builder.html",
+      fileName: "strategy-run-{date}.md",
+      schema: "strange_but_true_travel_oracle.strategy_run.v1",
       storageKey: "sbtTravelOracleRun",
-      title: "Build oracle-run.md",
-      lede: "Create the dated decision record that agents can import, review and improve.",
-      markdownTitle: "Oracle Run",
+      title: "Build strategy-run.md",
+      lede: "Create the dated strategy-modelling file that future agents and smart datasets can import, review and improve.",
+      markdownTitle: "Strategy Run",
       titleField: "question",
-      handoff: "This is the synthesis file. It should name the question, evidence, agent outputs, decision band and what would change the answer.",
+      handoff: "This is not the oracle. It is one structured dataset for modelling mixed preferences, plans, constraints, strategy, serendipity and what would change the answer.",
       groups: [
         {
-          legend: "Decision question",
+          legend: "Strategy question",
           fields: [
             { name: "run_date", label: "Run date", type: "date" },
-            { name: "question", label: "Question", type: "textarea", placeholder: "Where should Luke go next, why, and what must be true before it is sensible?" },
+            { name: "question", label: "Question", type: "textarea", placeholder: "What route, place, timing, relationship, table, work or recovery strategy is being modelled?" },
             { name: "candidate_destinations", label: "Candidate destinations", type: "textarea", placeholder: "One per line, with short notes if helpful." },
-            { name: "decision_band", label: "Decision band", type: "select", options: decisionBands }
+            { name: "decision_band", label: "Current strategy band", type: "select", options: decisionBands }
           ]
         },
         {
-          legend: "Agent outputs",
+          legend: "Dataset inputs",
           fields: [
             { name: "official_checks", label: "Official and operational checks", type: "textarea", placeholder: "Visa, safety, health, route, budget, legal-framework insurance requirements only." },
             { name: "serendipity_output", label: "Serendipity and spontaneity output", type: "textarea", placeholder: "Useful surprise, invitations, cheap paths, chance openings, smallest safe yes." },
@@ -168,10 +168,10 @@
           ]
         },
         {
-          legend: "Synthesis",
+          legend: "Strategy model",
           fields: [
-            { name: "score_summary", label: "Score summary", type: "textarea", placeholder: "Plain summary of the score shape and why." },
-            { name: "reason", label: "Reason for current answer", type: "textarea", placeholder: "The decision in plain English." },
+            { name: "score_summary", label: "Model summary", type: "textarea", placeholder: "Plain summary of the preference mix, constraints, strategy, serendipity and current weighting." },
+            { name: "reason", label: "Reason for current model", type: "textarea", placeholder: "The current strategy in plain English." },
             { name: "what_would_change", label: "What would change the answer?", type: "textarea", placeholder: "New source, new invitation, price shift, visa rule, health issue, consent boundary, route change." },
             { name: "next_check", label: "Next check date or trigger", type: "text", placeholder: "e.g. 48 hours, after visa source update, when invitation is confirmed" }
           ]
@@ -321,7 +321,7 @@
         {
           legend: "Brief scope",
           fields: [
-            { name: "brief_title", label: "Brief title", type: "text", placeholder: "e.g. Travel oracle run for Japan shortlist" },
+            { name: "brief_title", label: "Brief title", type: "text", placeholder: "e.g. travel strategy run for Japan shortlist" },
             { name: "task", label: "Task for AI agents", type: "textarea", placeholder: "What should the agent team do with the imported files?" },
             { name: "files_attached", label: "Files attached or pasted", type: "textarea", placeholder: "travel-intake.md, destination-dossier-kyoto.md, signal-log-2026-05-13.md..." },
             { name: "agents_needed", label: "Agents needed", type: "checkboxes", options: agentRoles }
@@ -333,7 +333,7 @@
             { name: "tone_rules", label: "Tone and philosophy rules", type: "textarea", placeholder: "Australian English, Strange But True, JRA as compass not sermon, non-normal GGM handling." },
             { name: "privacy_rules", label: "Privacy rules", type: "textarea", placeholder: "Do not expose live location, real people, romance, exact route, money, credentials, or vulnerable details." },
             { name: "insurance_rule", label: "Insurance wording rule", type: "textarea", placeholder: "Only mention insurance where legally, contractually, entry, venue, transport or client-framework required." },
-            { name: "output_requested", label: "Output requested", type: "textarea", placeholder: "Dossier update, scored oracle run, checklist, questions, next actions, source list, redacted public summary." }
+            { name: "output_requested", label: "Output requested", type: "textarea", placeholder: "Dossier update, strategy model run, checklist, questions, next actions, source list, redacted public summary." }
           ]
         }
       ]

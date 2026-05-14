@@ -2,11 +2,11 @@
 
 Private working repo for Luke travelling under the Strange but True banner.
 
-This is not a paid writing bundle and not a public travel advice product. It is a private operating system for planning, live checks, decision trees, country dossiers, and agent-team handoffs.
+This is not a paid writing bundle and not a public travel advice product. It is a private operating system for building smart travel datasets: preferences, plans, strategy runs, serendipity maps, country dossiers, and agent-team handoffs.
 
 ## Purpose
 
-The Travel Oracle helps answer one practical question:
+This repo prepares the data for a future travel oracle. The practical question underneath the dataset is:
 
 > Where should Luke go next, why, and what must be true before it is sensible to move?
 
@@ -20,10 +20,10 @@ It uses visible browser builders to create markdown files, then treats those `.m
 - No passport numbers, card details, seed phrases, private keys, one-time codes, or account credentials.
 - Visa, safety, health, cost, and legal claims must be checked against official sources before action.
 - Insurance is included only where it is part of legal, visa, entry, venue, transport, or client-framework compliance. It is not treated as peace of mind or market logic.
-- Serendipity and spontaneity matter. The oracle should leave room for useful surprise while still naming real constraints.
+- Serendipity and spontaneity matter. The future oracle should leave room for useful surprise while still naming real constraints.
 - Romance and intercultural relationships matter. Consent, law, local norms, privacy, and power differences must be explicit.
 - "Precognition" means pattern sensing, scenario planning, dream/intuitive notes, and early-warning thinking. It is not treated as certainty.
-- Every go/no-go decision needs a plain-language reason.
+- Every strategy run needs a plain-language reason.
 
 ## Main Sections
 
@@ -50,12 +50,12 @@ The dashboard is a readable front door. The builder pages create the working mar
 
 - `travel-intake.md` - current human situation, JRA compass, privacy boundary, agent questions.
 - `destination-dossier-{place}.md` - destination checks, culture, relationships, Shared Table, Musicverse, Strange But True fit.
-- `oracle-run-{date}.md` - dated decision record and synthesis.
+- `strategy-run-{date}.md` - dated model of mixed preferences, constraints, plans, strategy, and serendipity.
 - `signal-log-{date}.md` - dreams, intuition, repeated signs, practical checks, and overclaim boundaries.
 - `serendipity-map.md` - invitations, chance openings, smallest safe yes/no.
 - `relationship-field.md` - romance, intercultural relationships, consent, law, GGM / Love U.N. context.
 - `shared-table-field-note.md` - food, hospitality, protocol, reciprocity and public/private story boundaries.
-- `agent-team-brief.md` - paste-ready instructions for AI tools working with exported oracle files.
+- `agent-team-brief.md` - paste-ready instructions for AI tools working with exported travel strategy files.
 
 ## Source Repos
 

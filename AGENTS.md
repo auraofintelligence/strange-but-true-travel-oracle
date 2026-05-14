@@ -44,14 +44,14 @@ Use these folders:
 - `decision-trees/` for structured decisions.
 - `data/destinations/` for country and city dossiers.
 - `data/sources/` for official and supporting sources.
-- `logs/oracle-runs/` for dated oracle runs.
+- `logs/strategy-runs/` for dated strategy runs.
 - `templates/` for repeatable file formats.
 
 Use these builder pages:
 
 - `travel-intake-builder.html` -> `travel-intake.md`
 - `destination-dossier-builder.html` -> `destination-dossier-{place}.md`
-- `oracle-run-builder.html` -> `oracle-run-{date}.md`
+- `strategy-run-builder.html` -> `strategy-run-{date}.md`
 - `signal-log-builder.html` -> `signal-log-{date}.md`
 - `serendipity-builder.html` -> `serendipity-map.md`
 - `relationship-field-builder.html` -> `relationship-field.md`
