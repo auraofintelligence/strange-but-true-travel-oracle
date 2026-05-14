@@ -4,6 +4,8 @@ This note connects the Travel Oracle to the local `legal-memory-workbench` repo.
 
 The point is not to turn the travel site into a lawyer. The point is to prepare cleaner legal-information questions before Luke moves between rule systems.
 
+The builder should start with the thing in front of Luke: a visa line, embassy page, route question, relationship edge, source clue, contract condition, venue rule, airline wording, island permit or phrase that needs explaining. Do not ask agents to infer the missing facts silently.
+
 ## Home Rule Layers
 
 Start with Luke's current legal memory:

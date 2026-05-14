@@ -144,50 +144,73 @@
       schema: "strange_but_true_travel_oracle.legal_bridge.v1",
       storageKey: "sbtTravelOracleLegalBridge",
       title: "Build legal-bridge.md",
-      lede: "Map the legal nuance between Luke's home rule layers and the country, island or territory being considered.",
+      lede: "Turn fine print, rule clues and unknowns into an agent-ready map between Luke's home rule layers and the country, island or territory being considered.",
       markdownTitle: "Legal Bridge",
-      titleField: "target_place",
+      titleField: "map_title",
       handoff: "Give this to the Legal Memory / Travel Law Mapping Agent before a strategy run becomes action. This is legal information preparation only, not legal advice.",
       groups: [
         {
-          legend: "Home and destination frame",
+          legend: "Start with one thing",
           fields: [
-            { name: "map_title", label: "Map title", type: "text", placeholder: "e.g. Queensland to Japan legal bridge, Australia to French Polynesia field map" },
-            { name: "home_base", label: "Home legal base", type: "text", placeholder: "Australian citizen, Queensland base, local/home community layer" },
-            { name: "home_layers", label: "Local tri-jurisdictional layers", type: "textarea", placeholder: "Commonwealth / Australia, Queensland, local council or community context. Add any specific home-base legal memories." },
-            { name: "target_place", label: "Target country, island or territory", type: "text", placeholder: "Country, territory, island group, disputed region, overseas territory or route cluster" },
+            { name: "map_title", label: "What is this legal bridge note called?", type: "text", placeholder: "Short title", help: "Example: Queensland to Japan entry bridge; Australia to French Polynesia route check; Pacific island legal nuance map." },
+            { name: "focus_subject", label: "What exact thing is in front of you?", type: "textarea", placeholder: "Name the rule, clue or situation.", help: "A visa condition, embassy page, airline rule, invitation, relationship question, work offer, venue condition, border route, permit, device/data concern, or unknown phrase." },
+            { name: "fine_print", label: "Paste the fine print, wording, source clue or situation", type: "textarea", placeholder: "Paste exact wording here.", help: "Use direct wording from an official page, form, email, visa condition, contract, permit, event rule or local source. If there is no source yet, write the situation plainly." },
+            { name: "current_understanding", label: "What do you think it means right now?", type: "textarea", placeholder: "Plain first reading.", help: "This can be rough. The point is to show the agent your starting assumption so it can test it instead of guessing." },
+            { name: "clarity_wanted", label: "What do you want more clarity or awareness about?", type: "textarea", placeholder: "Questions, fears, unknowns.", help: "Ask for source layers, missing facts, official checks, local custom, consent boundaries, travel action gates or words that need explaining." },
+            { name: "first_ai_help", label: "What should the agent help with first?", type: "select", options: [["not_sure", "Not sure yet"], ["explain_words", "Explain confusing words"], ["find_rule_layers", "Find rule layers"], ["list_missing_facts", "List missing facts"], ["build_source_checklist", "Build source checklist"], ["compare_home_destination", "Compare home and destination"], ["write_better_questions", "Turn this into better questions"], ["escalate", "Decide who to ask next"]] }
+          ]
+        },
+        {
+          legend: "Home and destination rule layers",
+          fields: [
+            { name: "home_base", label: "What is Luke's home legal base for this note?", type: "text", placeholder: "Short home base", help: "Usually Australian citizen / Queensland base / local council or community context, but write the real layer for this question." },
+            { name: "home_layers", label: "Which local tri-jurisdictional layers might matter?", type: "textarea", placeholder: "Australia, Queensland, local.", help: "Think Commonwealth / Australia, Queensland, council or local community. Add any Legal Memory Workbench files that should follow the travel note." },
+            { name: "target_place", label: "Which country, island, territory or route is being checked?", type: "text", placeholder: "Destination or route", help: "Name the place as specifically as possible, including island group, overseas territory, disputed region, cruise stop, border crossing, or route cluster if relevant." },
             { name: "target_status", label: "Target status", type: "select", options: [["country", "Country"], ["island_or_territory", "Island or territory"], ["overseas_territory", "Overseas territory"], ["disputed_or_partial", "Disputed or partially recognised"], ["regional_route", "Regional route"], ["unknown", "Unknown"]] },
-            { name: "travel_role", label: "Likely travel role", type: "checkboxes", options: [["tourist", "Tourist"], ["business", "Business"], ["research", "Research"], ["artist_writer", "Artist / writer"], ["speaker", "Speaker"], ["volunteer", "Volunteer"], ["relationship", "Relationship / courtship"], ["shared_table", "Shared Table"], ["ai_blockchain", "AI / blockchain"], ["other", "Other"]] }
+            { name: "route_places", label: "What route places or crossings could pull in extra rules?", type: "textarea", placeholder: "Transit, borders, stopovers.", help: "Airports, ferries, disputed borders, stopovers, overseas territories, local provinces, special zones, islands, or visa-run paths can all change the legal map." },
+            { name: "travel_role", label: "Which roles might you be travelling under?", type: "checkboxes", options: [["tourist", "Tourist"], ["business", "Business"], ["remote_work", "Remote work"], ["research", "Research"], ["artist_writer", "Artist / writer"], ["speaker", "Speaker"], ["volunteer", "Volunteer"], ["relationship", "Relationship / courtship / family"], ["shared_table", "Shared Table"], ["ai_blockchain", "AI / blockchain"], ["spiritual_cultural", "Spiritual / cultural learning"], ["other", "Other"]], help: "Do not assume one role. A trip can blend tourism, writing, relationship, research, business, cultural learning and public story layers." }
           ]
         },
         {
-          legend: "Rule comparison",
+          legend: "Rule surfaces to scan",
           fields: [
-            { name: "entry_stay", label: "Entry, stay and movement", type: "textarea", placeholder: "Visa, visa-free stay, border crossings, local registration, passport constraints, exit rules, restricted regions." },
-            { name: "work_business_money", label: "Work, business, money and tax clues", type: "textarea", placeholder: "Business meetings, paid work, remote work, local tax, banking, crypto, fundraising, gifts, grants, customs." },
-            { name: "relationships_family", label: "Relationships, marriage and family law clues", type: "textarea", placeholder: "Dating norms, consent age, marriage, non-standard relationships, public affection, family expectations, gender norms, GGM relevance." },
-            { name: "speech_media_content", label: "Speech, media, content and reputation", type: "textarea", placeholder: "Photography, filming, public commentary, defamation, political speech, religion, sacred sites, publishing boundaries." },
-            { name: "data_ai_crypto", label: "Data, AI, devices and blockchain", type: "textarea", placeholder: "Device searches, encryption, drones, biometrics, AI demos, data privacy, crypto/token restrictions, online conduct." },
-            { name: "health_substances", label: "Health, medicine, substances and body rules", type: "textarea", placeholder: "Medication, prescriptions, supplements, health declarations, local substance laws, medical privacy, body/biometric concerns." }
+            { name: "rule_surfaces", label: "Where could rules, permissions or local limits appear?", type: "checkboxes", options: [["entry_stay", "Entry, stay and exit"], ["border_movement", "Borders, islands and restricted regions"], ["work_business_money", "Work, business, money and tax"], ["remote_work", "Remote work and online income"], ["romance_family", "Romance, marriage and family"], ["consent_power", "Consent, age, power and vulnerability"], ["speech_media", "Speech, media and reputation"], ["photography_filming", "Photography, filming and sacred sites"], ["data_devices_ai", "Data, devices, AI and encryption"], ["crypto_blockchain", "Crypto, blockchain and tokens"], ["health_medicine", "Health, medicine and prescriptions"], ["customs_biosecurity", "Customs and biosecurity"], ["transport_driving", "Transport, driving and boats"], ["accommodation_tenancy", "Accommodation and tenancy"], ["insurance_compliance", "Insurance compliance only"], ["police_embassy", "Police, embassy or emergency path"], ["other", "Other"]], help: "Tick broad surfaces first. The agent can split them into official sources, local custom, contract terms, venue rules and human-risk notes later." },
+            { name: "entry_stay", label: "What entry, stay, exit or movement wording needs checking?", type: "textarea", placeholder: "Visa and border notes.", help: "Visa-free days, onward ticket, registration, passport validity, exit fees, border crossings, restricted regions, local permits, island permits or special administrative zones." },
+            { name: "relationships_family", label: "What romance, intercultural relationship, family or GGM-adjacent questions need respect?", type: "textarea", placeholder: "Real people private.", help: "Consent, age, family expectations, public affection, local gender norms, marriage rules, non-standard relationship assumptions, power differences and privacy. Do not force theory onto people." },
+            { name: "work_business_money", label: "What work, business, money or tax clues are involved?", type: "textarea", placeholder: "Work/income clues.", help: "Business meetings, paid work, remote work, speaking, grants, gifts, fundraising, crypto, banking, customs, income timing or Australian tax residency questions." },
+            { name: "data_ai_crypto", label: "What data, device, AI or blockchain issues might be present?", type: "textarea", placeholder: "Device/data clues.", help: "Device searches, encryption, drones, biometrics, AI demos, datasets, privacy law, online conduct, crypto/token restrictions or public claims." },
+            { name: "insurance_compliance", label: "Does insurance appear only as a legal or contractual requirement?", type: "textarea", placeholder: "Compliance only.", help: "Only record entry, visa, venue, transport, client, event, contract or law requirements. No peace-of-mind framing, no market-economics sermon." },
+            { name: "plain_uncertainty_notes", label: "What feels uncertain in plain English?", type: "textarea", placeholder: "Write the friction.", help: "What could go wrong, what feels ambiguous, what you are tempted to assume, or what should be paused until the source trail is stronger." }
           ]
         },
         {
-          legend: "Nuance and conflict points",
+          legend: "Source trail and clue quality",
           fields: [
-            { name: "home_rules_follow", label: "Home rules that may follow Luke", type: "textarea", placeholder: "Australian passport duties, tax residency, online conduct, business obligations, family/legal memory issues, evidence duties." },
-            { name: "destination_overrides", label: "Destination rules that may override assumptions", type: "textarea", placeholder: "Where local law, custom, contract, police power, visa condition or platform rule changes the plan." },
-            { name: "grey_zones", label: "Grey zones and unknowns", type: "textarea", placeholder: "Anything that feels legally unclear, culturally ambiguous, risky, contested or source-dependent." },
-            { name: "legal_memory_links", label: "Legal Memory Workbench links or files", type: "textarea", placeholder: "jurisdiction-map.md, legal-sources.md, risk-map.md, evidence-checklist.md, agent-instructions.md, or local workbench notes to import." },
-            { name: "official_sources", label: "Official sources to check", type: "textarea", placeholder: "Embassy, consulate, immigration, police, customs, tax, health, local government, court/tribunal, regulator, Smartraveller-style source." }
+            { name: "official_sources", label: "Which official sources have you already found or need to check?", type: "textarea", placeholder: "Official source trail.", help: "Embassy, consulate, immigration, police, customs, tax, health, court, tribunal, regulator, local government, airline, ferry, airport, venue, or Smartraveller-style source." },
+            { name: "source_confidence", label: "How confident are you that the source trail is official enough?", type: "select", options: [["not_checked", "Not checked yet"], ["official_found", "Official source found"], ["mixed_sources", "Mixed official and secondary sources"], ["secondary_only", "Secondary explainers only"], ["unknown", "Unknown source quality"], ["outdated", "May be outdated"]] },
+            { name: "date_checked", label: "Date the source trail was checked", type: "date", help: "Rules drift. This date tells the agent whether the source trail is stale before the trip becomes action." },
+            { name: "agencies_to_search", label: "Which agencies, regulators or departments should be searched next?", type: "textarea", placeholder: "Search targets.", help: "If you do not know the agency name, write the topic and place. Example: immigration office, local police, island council, health ministry, tax office, embassy, tourism board." },
+            { name: "help_paths", label: "What help, complaint, review or escalation paths are visible?", type: "textarea", placeholder: "Help paths.", help: "Embassy contact, regulator help page, tribunal, ombudsman, legal aid, official enquiry form, local lawyer, community organisation, host, hotel, airline or event organiser." },
+            { name: "unknown_words", label: "Which words, rule names or agencies do you not understand yet?", type: "textarea", placeholder: "Exact confusing words.", help: "Copy the words exactly as found. The agent should explain them before it builds strategy around them." }
           ]
         },
         {
-          legend: "Action handoff",
+          legend: "Home and destination comparison",
+          fields: [
+            { name: "home_rules_follow", label: "Which home rules might follow Luke overseas?", type: "textarea", placeholder: "Home obligations.", help: "Australian passport duties, tax residency, online conduct, business obligations, evidence duties, privacy, family/legal memory issues, or local Queensland context." },
+            { name: "destination_overrides", label: "Which destination rules might override Australian assumptions?", type: "textarea", placeholder: "Local overrides.", help: "Local law, custom, police power, visa condition, contract, platform rule, venue rule, sacred-site protocol, family expectation, or public/private boundary." },
+            { name: "shared_table_cultural_rules", label: "What Shared Table or cultural-host rules could matter?", type: "textarea", placeholder: "Hospitality and protocol.", help: "Food, gifts, hosts, reciprocity, alcohol, religious boundaries, gendered spaces, ceremonial rules, family tables, guest duties and what should never become public content." },
+            { name: "conflict_points", label: "Where could the home and destination layers clash?", type: "textarea", placeholder: "Friction points.", help: "A thing may be legal at home and awkward, illegal or unsafe elsewhere. Or local custom may expect behaviour that conflicts with your privacy, consent, money or ethics." },
+            { name: "what_not_to_do", label: "What should not happen until this is checked?", type: "textarea", placeholder: "Pause list.", help: "Actions, posts, claims, relationship moves, business moves, border crossings, payments, documents, public story threads or AI outputs that should wait." }
+          ]
+        },
+        {
+          legend: "Agent handoff",
           fields: [
             { name: "legal_status", label: "Current legal-readiness band", type: "select", options: [["info_only", "Information only"], ["needs_source_check", "Needs official source check"], ["ask_embassy", "Ask embassy / consulate"], ["ask_local_lawyer", "Ask local lawyer or clinic"], ["do_not_act", "Do not act yet"], ["cleared_for_strategy", "Cleared for strategy run"]] },
-            { name: "insurance_compliance", label: "Insurance only if legally or contractually required", type: "textarea", placeholder: "Only record entry, visa, venue, transport, client, event or contract requirements. No peace-of-mind framing." },
-            { name: "what_not_to_do", label: "What not to do until checked", type: "textarea", placeholder: "Actions, claims, posts, relationship moves, business moves, payments, crossings or documents to pause." },
-            { name: "next_questions", label: "Next legal questions for agents", type: "textarea", placeholder: "Specific questions an AI agent, official source, embassy or lawyer should answer before travel action." }
+            { name: "legal_memory_links", label: "Which Legal Memory Workbench files or notes should be imported?", type: "textarea", placeholder: "Workbench files.", help: "jurisdiction-map.md, legal-sources.md, risk-map.md, evidence-checklist.md, agent-instructions.md, or specific local legal-memory notes." },
+            { name: "next_questions", label: "What exact questions should agents answer next?", type: "textarea", placeholder: "Question list.", help: "Write concrete questions for an AI agent first. High-risk or unclear questions can then be escalated to an official source, embassy, consulate, lawyer or local help path." },
+            { name: "escalation_rule", label: "When must this stop being an AI-only question?", type: "textarea", placeholder: "Escalation trigger.", help: "Examples: before applying for a visa, before earning money, before crossing a border, before publishing personal material, before relationship commitment, before signing anything, before medical or legal exposure." }
           ]
         }
       ]

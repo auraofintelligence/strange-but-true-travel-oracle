@@ -74,6 +74,14 @@
     return currentFileName() || config.page;
   }
 
+  function appendFieldHelp(label, field) {
+    if (!field.help) return;
+    const help = document.createElement("p");
+    help.className = "field-help";
+    help.textContent = field.help;
+    label.appendChild(help);
+  }
+
   function getState(config, form) {
     const state = {};
     config.groups.forEach((group) => {
@@ -136,6 +144,7 @@
       textarea.rows = 5;
       textarea.placeholder = field.placeholder || "";
       label.appendChild(textarea);
+      appendFieldHelp(label, field);
       return label;
     }
 
@@ -150,6 +159,7 @@
         select.appendChild(option);
       });
       label.appendChild(select);
+      appendFieldHelp(label, field);
       return label;
     }
 
@@ -165,10 +175,13 @@
         input.type = "checkbox";
         input.name = field.name;
         input.value = value;
-        optionLabel.append(input, " " + text);
+        const optionText = document.createElement("span");
+        optionText.textContent = text;
+        optionLabel.append(input, optionText);
         group.appendChild(optionLabel);
       });
       label.appendChild(group);
+      appendFieldHelp(label, field);
       return label;
     }
 
@@ -178,6 +191,7 @@
     input.type = field.type || "text";
     input.placeholder = field.placeholder || "";
     label.appendChild(input);
+    appendFieldHelp(label, field);
     return label;
   }
 
