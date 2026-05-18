@@ -19,6 +19,31 @@ if (today) {
   }).format(new Date());
 }
 
+const footer = document.querySelector(".footer");
+if (footer && !footer.querySelector(".compat-links")) {
+  const compat = document.createElement("nav");
+  compat.className = "compat-links";
+  compat.setAttribute("aria-label", "Compatible travel context");
+
+  const note = document.createElement("span");
+  note.textContent = "Compatible previous version:";
+
+  const travel = document.createElement("a");
+  travel.href = "https://auraofintelligence.github.io/Australian-world-travel/";
+  travel.target = "_blank";
+  travel.rel = "noopener noreferrer";
+  travel.textContent = "Australian World Travel";
+
+  const strategy = document.createElement("a");
+  strategy.href = "https://auraofintelligence.github.io/Australian-world-travel/strategy.html";
+  strategy.target = "_blank";
+  strategy.rel = "noopener noreferrer";
+  strategy.textContent = "Strategy page";
+
+  compat.append(note, travel, strategy);
+  footer.appendChild(compat);
+}
+
 const toTop = document.createElement("button");
 toTop.className = "to-top";
 toTop.type = "button";
