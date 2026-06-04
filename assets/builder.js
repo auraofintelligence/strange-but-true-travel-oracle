@@ -247,10 +247,13 @@
       "",
       "## AI Import Instructions",
       "",
-      "- Treat this as private context for Luke's Strange But True travel strategy dataset workspace.",
-      "- Preserve Australian English and the private, agent-managed future-oracle frame.",
+      "- Treat this as private self-sovereign context for the active traveller(s) inside Luke's Strange But True travel strategy dataset workspace.",
+      "- Preserve Australian English, the private future-oracle frame, and the traveller's right to choose how a life of travel is navigated.",
+      "- Do not flatten the traveller(s) into a client, itinerary, risk profile, destination score or travel-agent workflow.",
       "- Joyful Responsible Abundance is a direction of hope and a compass, not a sermon or a claim of arrival.",
-      "- Serendipity, spontaneity, romance, intercultural relationships and Global Group Marriages context are real planning lanes, not side notes.",
+      "- Relativity matters: hold shifting context, changing capacity, mixed motives and multiple possible lives without forcing one premature answer.",
+      "- The source planning documents are examples of sophisticated Earth navigation, not gospel; scale the response to the traveller's actual moment.",
+      "- Serendipity, spontaneity, romance, intercultural relationships and Global Group Marriages context are real life-navigation lanes, not side notes.",
       "- Insurance may only appear as a legal, entry, visa, venue, transport or client-framework requirement.",
       "- Do not publish live location, exact routes, real people, romance details, private contacts, financial details, identity documents, credentials or vulnerable material.",
       "",
@@ -334,7 +337,7 @@
       const link = document.createElement("a");
       link.className = "button secondary";
       link.href = config.page;
-      link.textContent = "Open working page";
+      link.textContent = "Open this map";
 
       card.append(tag, title, copy, link);
       fragment.appendChild(card);
@@ -348,7 +351,7 @@
     trail.setAttribute("aria-label", "Builder navigation");
 
     const summary = document.createElement("p");
-    summary.textContent = config.fileName + " export";
+    summary.textContent = config.fileName + " self-sovereign export";
 
     const links = document.createElement("div");
     links.className = "builder-trail-links";

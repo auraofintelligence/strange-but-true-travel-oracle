@@ -35,14 +35,16 @@ Use: borrow the legal-memory workflow and generate travel-specific legal bridge 
 
 Role: private source material for the SBT markdown-builder component.
 
+Boundary: these documents are not gospel. They are detailed examples of sophisticated ways to navigate Earth, ranging from AI-assisted travel intelligence to decade-scale country-and-territory strategy. The current traveller may choose an occasional adventure, a focused route, a long mission, or anything in between.
+
 Useful files:
 
 - `Designing_a_Dynamic_AI-Powered_Travel_Intelligence_System.md` - dynamic data ingestion, agent orchestration, real-time adaptation, and human-in-the-loop workflow.
-- `Global_Peace_Through_AI_Travel.md` - 256-location mission frame, visa triage, Location Readiness Score, and AI/peace opportunity mapping.
+- `Global_Peace_Through_AI_Travel.md` - 256-location mission frame, visa triage, Location Readiness Score, and AI/peace opportunity mapping as one high-complexity example.
 - `Aura_Travel_Oracle.md` - earlier Aura Travel interface exports and travel tool prototypes.
 - `Luke's_Travel_Oracle_for_2025_to_2035.md` - personal 2025-2035 travel oracle logic: survival, love, mission, serendipity, and next-best-action reasoning.
 
-Use: convert the high-level and data-heavy source material into small auditable `.md` outputs, not another passive report.
+Use: convert the high-level and data-heavy source material into small auditable `.md` outputs that preserve values, empathy, self-sovereignty, relativity and serendipity. Do not turn the examples into compulsory doctrine.
 
 ## the-great-unveiling
 

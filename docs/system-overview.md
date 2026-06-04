@@ -4,10 +4,12 @@ This site is a private markdown-builder-first operating system for feeding a fut
 
 Its core compass is Joyful Responsible Abundance, held as a direction of hope rather than a claim that Luke already has enough of it.
 
+The travel scale is deliberately relative. A map can support one occasional adventure, a short route, a seasonal experiment, a decade-long systematic journey through countries and territories, or anything in between. The point is to help the traveller navigate Earth while preserving self-sovereignty, personal values, empathy, serendipity and human choice.
+
 It combines nine layers:
 
 1. Browser working pages that export `.md` files for AI import.
-2. Real-world checks.
+2. Traveller values, scale, and real-world checks.
 3. Legal bridge mapping between home rule layers and destination rule layers.
 4. Serendipity and spontaneity context.
 5. Romance and intercultural relationship context.
@@ -49,7 +51,7 @@ These are practical and must be verified close to action:
 - visa and entry rules
 - passport validity
 - travel advisories
-- legal bridge between Luke's home rule layers and the destination's rule layers
+- legal bridge between the traveller's home rule layers and the destination's rule layers
 - insurance only where legally or contractually required
 - health requirements
 - route feasibility
@@ -64,7 +66,7 @@ The travel oracle should make legal nuance visible before a destination becomes 
 Useful checks:
 
 - Which Australian / Queensland / local or home-base rules may still matter while travelling?
-- Which destination laws, visa conditions, customs, contracts or local protocols override Luke's assumptions?
+- Which destination laws, visa conditions, customs, contracts or local protocols override the traveller's assumptions?
 - What changes when the target is an island, overseas territory, disputed region, partially recognised state or restricted area?
 - Which relationship, work, speech, data, device, AI, crypto, filming, medicine or public-space rules need official checking?
 - Which official source, embassy, consulate, legal clinic or local lawyer should be asked before action?
@@ -79,7 +81,7 @@ Useful checks:
 
 - What invitation, coincidence, route, event, meeting, or local opening is appearing?
 - What is the smallest safe spontaneous action?
-- What would over-planning cause Luke to miss?
+- What would over-planning cause the traveller to miss?
 - What would make this spontaneous move reckless?
 - Does the opportunity still pass legal, safety, money, consent, and privacy boundaries?
 
