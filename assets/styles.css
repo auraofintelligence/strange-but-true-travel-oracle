@@ -438,6 +438,13 @@ p {
   width: 100%;
 }
 
+.phone-feature {
+  display: grid;
+  gap: 0.85rem;
+  justify-items: center;
+  min-width: 0;
+}
+
 .phone-speaker,
 .phone-home {
   background: rgba(247, 243, 255, 0.24);
@@ -466,8 +473,9 @@ p {
   border-radius: 1.35rem;
   display: grid;
   gap: 0.75rem;
+  align-content: center;
   justify-items: center;
-  min-height: 32rem;
+  min-height: 30rem;
   overflow: hidden;
   padding: 1rem 0.8rem 0.9rem;
 }
@@ -484,9 +492,14 @@ p {
 }
 
 .phone-caption {
-  align-self: end;
+  background: rgba(16, 16, 32, 0.72);
+  border: 1px solid rgba(95, 216, 255, 0.18);
+  border-radius: 8px;
   display: grid;
   gap: 0.35rem;
+  max-width: 21rem;
+  padding: 0.85rem;
+  width: 100%;
 }
 
 .phone-caption strong {
@@ -1258,7 +1271,7 @@ tr:last-child td {
   }
 
   .phone-screen {
-    min-height: 30rem;
+    min-height: 27.5rem;
   }
 
   .phone-video {
@@ -1343,7 +1356,7 @@ tr:last-child td {
   }
 
   .phone-screen {
-    min-height: 27.5rem;
+    min-height: 25rem;
   }
 
   .phone-video {
