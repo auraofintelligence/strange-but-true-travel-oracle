@@ -130,7 +130,7 @@ main {
   margin: 0 auto;
   max-width: var(--max);
   min-width: 0;
-  padding: 1.8rem 1.25rem 4rem;
+  padding: 0 1.25rem 4rem;
   width: 100%;
 }
 
@@ -143,6 +143,63 @@ main {
 
 .page-head.wide {
   max-width: 100%;
+}
+
+.page-head.page-hero {
+  max-width: none;
+}
+
+.page-hero {
+  background: #0a0a14;
+  border-bottom: 1px solid rgba(95, 216, 255, 0.2);
+  border-top: 1px solid rgba(95, 216, 255, 0.12);
+  isolation: isolate;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  max-width: none;
+  min-height: clamp(20rem, 42vh, 30rem);
+  overflow: hidden;
+  padding:
+    clamp(2.6rem, 6vw, 4.7rem)
+    max(1.25rem, calc((100vw - var(--max)) / 2 + 1.25rem));
+  position: relative;
+  width: 100vw;
+}
+
+.page-hero::before,
+.page-hero::after {
+  content: "";
+  inset: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.page-hero::before {
+  background-image: var(--hero-image);
+  background-position: center;
+  background-size: cover;
+  filter: saturate(1.08) contrast(1.04);
+  opacity: 0.72;
+  z-index: -2;
+}
+
+.page-hero::after {
+  background:
+    linear-gradient(90deg, rgba(10, 10, 20, 0.92), rgba(10, 10, 20, 0.72) 45%, rgba(10, 10, 20, 0.38) 78%, rgba(10, 10, 20, 0.72)),
+    linear-gradient(180deg, rgba(10, 10, 20, 0.16), rgba(10, 10, 20, 0.88));
+  z-index: -1;
+}
+
+.page-hero h1,
+.page-hero .lede,
+.page-hero .toolbar {
+  position: relative;
+  text-shadow: 0 0.25rem 0.9rem rgba(0, 0, 0, 0.55);
+}
+
+.page-hero .lede {
+  color: #f7f3ff;
+  max-width: 70ch;
 }
 
 h1,
@@ -182,21 +239,28 @@ p {
   display: grid;
   gap: 1.25rem;
   min-width: 0;
-  padding-top: 1.5rem;
+  padding-top: 0;
 }
 
 .home-hero {
   align-items: stretch;
   background: #0a0a14;
   border: 1px solid rgba(95, 216, 255, 0.22);
-  border-radius: 8px;
+  border-left: 0;
+  border-radius: 0;
+  border-right: 0;
   display: grid;
   gap: 1rem;
   grid-template-columns: minmax(0, 1.25fr) minmax(19rem, 0.75fr);
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
   min-height: clamp(32rem, 68vh, 44rem);
   overflow: hidden;
-  padding: 1rem;
+  padding:
+    clamp(1.1rem, 3vw, 2rem)
+    max(1.25rem, calc((100vw - var(--max)) / 2 + 1.25rem));
   position: relative;
+  width: 100vw;
 }
 
 .hero-media,
