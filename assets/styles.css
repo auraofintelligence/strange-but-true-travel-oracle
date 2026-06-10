@@ -466,29 +466,26 @@ p {
 }
 
 .phone-screen {
-  background:
-    linear-gradient(180deg, rgba(95, 216, 255, 0.1), transparent 42%),
-    rgba(24, 24, 42, 0.95);
-  border: 1px solid rgba(95, 216, 255, 0.16);
+  background: transparent;
+  border: 0;
   border-radius: 1.35rem;
   display: grid;
-  gap: 0.75rem;
   align-content: center;
   justify-items: center;
-  min-height: 30rem;
+  min-height: 0;
   overflow: hidden;
-  padding: 1rem 0.8rem 0.9rem;
+  padding: 0;
 }
 
 .phone-video {
   aspect-ratio: 824 / 1464;
   background: #000;
   border: 0;
-  border-radius: 0.95rem;
-  box-shadow: 0 0.6rem 1rem rgba(0, 0, 0, 0.28);
+  border-radius: 1.25rem;
+  box-shadow: none;
   display: block;
   object-fit: cover;
-  width: min(100%, 14.5rem);
+  width: 100%;
 }
 
 .phone-caption {
@@ -1270,14 +1267,6 @@ tr:last-child td {
     max-width: 19rem;
   }
 
-  .phone-screen {
-    min-height: 27.5rem;
-  }
-
-  .phone-video {
-    width: min(100%, 13.2rem);
-  }
-
   .anchor-strip {
     align-items: start;
     display: grid;
@@ -1355,13 +1344,6 @@ tr:last-child td {
     max-width: 17.5rem;
   }
 
-  .phone-screen {
-    min-height: 25rem;
-  }
-
-  .phone-video {
-    width: min(100%, 12rem);
-  }
 }
 
 @media (prefers-reduced-motion: reduce) {
