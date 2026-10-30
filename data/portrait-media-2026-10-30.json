@@ -1,0 +1,28 @@
+{
+  "updated": "2026-10-30",
+  "songs": [
+    {
+      "key": "07",
+      "project": "every-border-a-bridge",
+      "title": "Every Border a Bridge",
+      "album": "A Protopian Gambit",
+      "song_slug": "a-protopian-gambit-08-every-border-a-bridge",
+      "video_url": "https://auraofintelligence.github.io/infinity-engine/assets/protopian-portraits/every-border-a-bridge-portrait-web-v1.mp4",
+      "poster_url": "https://auraofintelligence.github.io/infinity-engine/assets/protopian-portraits/every-border-a-bridge-portrait-cover-v1.jpg",
+      "dimensions": [
+        720,
+        1280
+      ],
+      "duration_s": 316.2,
+      "frames": 9486,
+      "updated": "2026-10-30",
+      "artist": "i C. infinity",
+      "lyrics": "Packed a bag with a passport smile\nOne-way ticket to the infinite mile\nEvery flag is a thread in my sleeve\nEvery stranger’s a story to weave\nChaos maps the lines I take\nEvery wrong turn a world I make\nFrom the docks of Dar to the streets of Rome\nEvery station’s a kind of home\nThis is not a holiday\nThis is how we plant the way\nFeet in the dust, hands in the sky\nEvery border a bridge, every mile a why\nWe go to dance, we go to build\nSing with the young, sit with the skilled\nEvery country, every shore\nLeaves me richer, wanting more\nNot to conquer, not to own\nBut to scatter memes we’ve grown\nRide the chaos, skip the plan\nFollow music through the sand\nMarkets hum with a thousand drums\nThe whole world speaks if your heart still hums\nFrom Yangon rain to Reykjavik snow\nThe language changes but the eyes still know\nThat the point is not the end we reach\nBut the joy we leave in the lives we teach\nHear the oud, hear the sitar’s call\nHear the djembe answer from the market wall\nHear the steelpan dance with the didgeridoo\nEvery rhythm’s a path to you\nWe go to dance, we go to build\nSing with the young, sit with the skilled\nEvery country, every shore\nLeaves me richer, wanting more\nNot to conquer, not to own\nBut to scatter memes we’ve grown\nNo map can hold this wave we ride\nNo gate can stop the rising tide\nOne world turning, still untamed\nEvery border a bridge, every soul acclaimed\nFrom the desert fires to the Arctic light\nEvery dawn’s a different height\nSip the tea, share the bread\nHear the hopes the elders said\nWhat we start in market squares\nFinds its way through ten thousand prayers\nAnd the circle’s only just begun\nWhen we’ve seen every moon, every sun\nWe go to dance, we go to build\nSing with the young, sit with the skilled\nEvery country, every shore\nLeaves me richer, wanting more\nNot to conquer, not to own\nBut to scatter memes we’ve grown\nEvery border a bridge…\nEvery border a bridge…\nEvery border a bridge we’ve grown…",
+      "landscape_youtube_url": "https://www.youtube.com/watch?v=6On5LyhVfj0",
+      "strong_language": false,
+      "media_host": "infinity-engine",
+      "video_sha256": "307a0e87c6f6863c56bfc07b47e853669ef228986d86030b20609204b336e0c0",
+      "poster_sha256": "95120a4c959c028bc2c08b9543e3df7c875f7b9699fb954329b417fc54ba3c72"
+    }
+  ]
+}
