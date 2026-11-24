@@ -1,13 +1,6 @@
 name: Coimas public opportunity data
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '45 20 * * *'
-  push:
-    branches: [main]
-    paths:
-      - 'opportunity-engine/**'
-      - '.github/workflows/coimas-opportunity-data.yml'
 permissions:
   contents: write
 concurrency:
