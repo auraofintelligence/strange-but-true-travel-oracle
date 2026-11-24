@@ -1,3 +1,9 @@
+# Legacy Coimas prototype
+
+The maintained Coimas Opportunity Engine has moved to [auraofintelligence/Coimas-Opportunity-Engine](https://github.com/auraofintelligence/Coimas-Opportunity-Engine). It uses a curated initiative portfolio rather than one candidate per repository. This historical prototype is retained for provenance only; its scheduled and push-triggered refreshes have been disabled. Do not use this prototype as the current opportunity portfolio.
+
+---
+
 # Coimas Opportunity Engine
 
 A portable, read-only consumer of the public Project Atlas and World Travel Patterns repositories. It is separate from the Oracle's private travel planning, and can move to a dedicated repository without changing its input contracts.
