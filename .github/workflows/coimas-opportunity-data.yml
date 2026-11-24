@@ -1,0 +1,69 @@
+name: Coimas public opportunity data
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '45 20 * * *'
+  push:
+    branches: [main]
+    paths:
+      - 'opportunity-engine/**'
+      - '.github/workflows/coimas-opportunity-data.yml'
+permissions:
+  contents: write
+concurrency:
+  group: coimas-public-opportunity-data
+  cancel-in-progress: false
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: coimas
+      - uses: actions/checkout@v4
+        with:
+          repository: auraofintelligence/project-atlas
+          path: atlas
+          sparse-checkout: data/projects.json
+          sparse-checkout-cone-mode: false
+          persist-credentials: false
+      - uses: actions/checkout@v4
+        with:
+          repository: auraofintelligence/world-travel-patterns
+          path: travel
+          sparse-checkout: |
+            data/places/spine.json
+            data/vetting/
+            patterns/
+          sparse-checkout-cone-mode: false
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Test and build only public data
+        working-directory: coimas
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          node opportunity-engine/tests.mjs
+          node --check opportunity-engine/app.mjs
+          node opportunity-engine/build.mjs --atlas ../atlas --travel ../travel --refresh-ids --out "$RUNNER_TEMP/coimas-data.json"
+      - name: Publish only material changes to generated public dataset
+        working-directory: coimas
+        run: |
+          mkdir -p opportunity-engine/generated
+          node --input-type=module -e '
+            import fs from "node:fs";
+            const target="opportunity-engine/generated/dataset.json";
+            const candidate=process.env.RUNNER_TEMP+"/coimas-data.json";
+            const next=JSON.parse(fs.readFileSync(candidate,"utf8"));
+            const material=d=>JSON.stringify([d.schemaVersion,d.projects,d.jurisdictions]);
+            if(fs.existsSync(target)&&material(JSON.parse(fs.readFileSync(target,"utf8")))===material(next)){console.log("No material data change.");}
+            else fs.copyFileSync(candidate,target);
+          '
+          git add opportunity-engine/generated/dataset.json
+          if git diff --cached --quiet; then exit 0; fi
+          git config user.name 'coimas-data-bot'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'Refresh public Coimas opportunity dataset'
+          git push origin HEAD:main
